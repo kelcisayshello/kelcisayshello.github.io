@@ -1,7 +1,7 @@
 {
   "name": "kelcisayshello.github.io",
   "private": true,
-  "homepage": "https://kelcisayshello.github.io/kelcisayshello.github.io",
+  "homepage": "./#",
   "version": "4.0.0",
   "type": "module",
   "scripts": {
