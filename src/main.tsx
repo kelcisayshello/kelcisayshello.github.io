@@ -4,22 +4,25 @@ import Resume from './routes/Resume';
 import Showcase from './routes/Showcase';
 import * as ReactDOM from "react-dom/client";
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
+    id: 'root',
     element: <Home />,
-  },
-  {
-    path: "showcase",
-    element: <Showcase />,
-  },
-  {
-    path: "resume",
-    element: <Resume />,
+    children: [
+      {
+        path: "showcase",
+        element: <Showcase />,
+      },
+      {
+        path: "resume",
+        element: <Resume />,
+      },
+   ]
   },
 ]);
 
