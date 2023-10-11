@@ -1,4 +1,5 @@
 import logo from "../assets/logo.png"
+import { Link } from "react-router-dom";
 
 export default function NavigationBar() {
 
@@ -7,9 +8,8 @@ export default function NavigationBar() {
             <div className="navigation-container">
                 <nav>
                     <ul>
-                        <li><a className="link home" href={`/`}>Home</a></li>
-                        <li><a className="link resume" href={`/showcase/`}>Showcase</a></li>
-                        <li><a className="link resume" href={`/resume/`}>Resume</a></li>
+                        <li><Link className="link home" to="/">Home</Link></li>
+                        <li><Link className="link resume" to="/resume">Resume</Link></li>
                         <li className="logo"> <img src={logo} alt="KLËMM logo" /> </li>
                     </ul>
                 </nav>

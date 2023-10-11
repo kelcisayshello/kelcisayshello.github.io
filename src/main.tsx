@@ -1,33 +1,19 @@
-import React from 'react'
+import { createRoot } from "react-dom/client";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
-import Resume from './routes/Resume';
-import Showcase from './routes/Showcase';
-import * as ReactDOM from "react-dom/client";
-import {
-  createHashRouter,
-  RouterProvider,
-} from "react-router-dom";
+import Resume from "./routes/Resume";
+import NavigationBar from "./components/NavigationBar"
 
-const router = createHashRouter([
-  {
-    path: "/",
-    id: 'root',
-    element: <Home />,
-    children: [
-      {
-        path: "showcase",
-        element: <Showcase />,
-      },
-      {
-        path: "resume",
-        element: <Resume />,
-      },
-   ]
-  },
-]);
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+const root = createRoot(document.getElementById("root")!);
+
+root.render(
+  <HashRouter>
+  <NavigationBar />
+
+    <Routes>
+      <Route path="/" element={ <Home/> } />
+      <Route path="/resume" element={ <Resume/> } />
+      </Routes>
+  </HashRouter>
+);

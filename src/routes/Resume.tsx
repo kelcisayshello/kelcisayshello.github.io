@@ -1,4 +1,3 @@
-import NavigationBar from '../components/NavigationBar'
 import Footer from '../components/Footer'
 import profile from '../assets/profile.jpg'
 import PageLoader from '../components/PageLoader'
@@ -25,7 +24,6 @@ function Resume() {
         <PageLoader />
       ) : (
         <div className="route-container">
-          <NavigationBar />
 
           <div className="resume-container w3-content">
             <div className="w3-row-padding">
