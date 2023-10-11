@@ -1,0 +1,80 @@
+.resume-container {
+    width: 85%;
+    /* border: 1px solid magenta; */
+    margin: 0 auto;
+}
+
+/* ------------------------- RESUME TITLE CONTAINER ------------------------- */
+.title-container h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 3rem;
+    margin: 4rem 0.5rem 0 0;
+
+}
+
+/* download button/link */
+.btn-download {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+}
+
+.btn-download a {
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.btn-download a:hover {
+    color: #3A7359;
+    opacity: 0.6;
+}
+
+/* --------------------------- ABOUT ME CONTAINER --------------------------- */
+.photo-container {
+    color: #FFF;
+}
+
+.photo-container img {
+    width: 100%;
+}
+
+.aboutme-container .widget {
+    font-size: 0.77rem;
+}
+
+.widget {
+    text-decoration: none;
+}
+
+/* -------------------------------- HEADINGS -------------------------------- */
+h3 {
+    font-size: 1.1rem;
+    margin: 2rem 0 0;
+}
+
+h4 {
+    font-size: 0.85rem;
+    margin: 0.70rem 0 0.1rem;
+}
+
+/* ---------- EDUCATION, WORK EXPERIENCE, ACHIEVEMENTS, INVOLVEMENT --------- */
+.education-item, .experience-item, .involvement-item {
+    font-size: 0.77rem;
+}
+
+.education-item p, .experience-item p, .involvement-item p {
+    margin: 0;
+}
+
+.education-item .date {
+    margin: 0.4rem 0;
+}
+
+.hyperlink {
+    text-decoration-style: dotted;
+    transition: 0.2s ease-in-out;
+}
+
+.hyperlink:hover {
+    color: #1f1f1f!important;
+}
