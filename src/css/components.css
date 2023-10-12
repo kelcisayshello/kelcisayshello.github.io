@@ -10,7 +10,7 @@
   top: 5px;
   z-index: 99;
 
-  background: rgba(255, 255, 255, 0.27);
+  background: rgba(255, 255, 255, 0.57);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
@@ -307,13 +307,98 @@
 
 /* ------------------------------ RESUME ASSETS ----------------------------- */
 .google:first-child {
-  color: #5185EC!important;
+  color: #5185EC !important;
 }
 
 .google:nth-child(2) {
-  color: #D85140!important;
+  color: #D85140 !important;
 }
 
 .google:nth-child(3) {
-  color: #F2BE42!important;
+  color: #F2BE42 !important;
+}
+
+/* ------------------------------- GRID LAYOUT ------------------------------ */
+.gridbackground {
+  /* border: 1px solid purple; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -90;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto ;
+  gap: 0px;
+  padding: 0 ;
+}
+
+.gridbackground > div {
+  /* background-color: #345D98; */
+  text-align: center;
+  padding: 0px ;
+  margin: 1px;
+  font-size: 30px;
+
+  /* transition: 2s ease-out; */
+  border-radius: 0.2rem;
+}
+
+.blue {
+  background-color: #345D98;
+}
+
+.red {
+  background-color: #DA4E3F;
+}
+
+.yellow {
+  background-color: #F2BE42;
+}
+
+.green {
+  background-color: #3A7359;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.flicker {
+  -webkit-animation: flickerAnimation 5s infinite;
+  -moz-animation: flickerAnimation 5s infinite;
+  -o-animation: flickerAnimation 5s infinite;
+   animation: flickerAnimation 5s infinite;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.flicker:nth-child(3n+4) {
+  animation-delay: 3s;
+}
+
+.flicker:nth-child(2n+1) {
+  animation-delay: 1s;
 }

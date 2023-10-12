@@ -1,11 +1,12 @@
-import AnimatedBackground from "../components/AnimatedBackground"
-// import Footer from "../components/Footer"
 import PageLoader from "../components/PageLoader";
 import { useState, useEffect } from 'react';
 import NavigationBar from "../components/NavigationBar";
+import Title from "../components/Title";
+import 'animate.css';
 
 import '../css/generic.css'
 import '../css/home.css'
+import GridBackground from "../components/GridBackground";
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -22,13 +23,16 @@ function Home() {
         <PageLoader />
       ) : (
 
-        <div className="route-container">
-          <NavigationBar />
+        <div className="route-container home">
 
+          <NavigationBar />
           <div className="home-content">
-            <h1>Hi, I'm<br />Kelci Mensah.</h1>
+            <Title />
           </div>
-          <AnimatedBackground />
+
+          <GridBackground />
+          
+          {/* <AnimatedBackground /> */}
         </div>
       )}
     </>
