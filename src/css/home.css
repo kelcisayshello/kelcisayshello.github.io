@@ -1,17 +1,25 @@
 .home-content {
     /* border: 2px solid green; */
-    padding: 10% 5%;
-    width: 85%;
+    /* padding: 10% 5%; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+
     margin: auto;
     /* overscroll-behavior: none; */
-
+    /* backdrop-filter: blur(3.5px);
+    background: rgba(255, 255, 255, 0.37); */
+    /* text-align: center; */
 }
 
 .home-content h1 {
     text-align: left;
     /* border: 2px solid blue; */
-    margin: 0;
-    width: 100%;
+    margin: auto;
+    vertical-align: center;
+    padding: auto;
+    width: 70%;
     /* padding: 10% 5%; */
     font-size: 13vw;
     user-select: none;
@@ -73,4 +81,10 @@
 
 .period {
     animation-delay: 1.3s;
+}
+
+/* ----------------------------- SQUIGGLE LINES ----------------------------- */
+.squiggle {
+    height: 15rem;
+    position: absolute;
 }

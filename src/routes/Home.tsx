@@ -3,10 +3,13 @@ import { useState, useEffect } from 'react';
 import NavigationBar from "../components/NavigationBar";
 import Title from "../components/Title";
 import 'animate.css';
-
 import '../css/generic.css'
-import '../css/home.css'
-import GridBackground from "../components/GridBackground";
+import '../css/home.css';
+import esquiggle from "../imgs/esquiggle.svg"
+import vsquiggle from "../imgs/vsquiggle.svg"
+import csquiggle from "../imgs/csquiggle.svg"
+
+
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -28,11 +31,14 @@ function Home() {
           <NavigationBar />
           <div className="home-content">
             <Title />
-          </div>
 
-          <GridBackground />
-          
-          {/* <AnimatedBackground /> */}
+          </div>
+          <img className="squiggle e" src={esquiggle} />
+          <img className="squiggle c" src={csquiggle} />
+          <img className="squiggle v" src={vsquiggle} />
+
+
+
         </div>
       )}
     </>
