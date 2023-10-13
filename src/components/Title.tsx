@@ -1,9 +1,7 @@
-import "../css/components.css"
-
 export default function Title() {
     return (
         <>
-            <h1>
+            <h1 className="name-title">
                 Hi, I'm<br />
                 <span className="moving k animate__animated animate__bounce">K</span>
                 <span className="moving e animate__animated animate__bounce">e</span>
@@ -19,7 +17,6 @@ export default function Title() {
                 <span className="moving h animate__animated animate__bounce">h</span>
                 <span className="moving period animate__animated animate__bounce">.</span>
             </h1>
-
         </>
     );
 }

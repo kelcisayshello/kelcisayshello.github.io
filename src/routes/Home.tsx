@@ -1,11 +1,9 @@
 import PageLoader from "../components/PageLoader";
 import { useState, useEffect } from 'react';
-import NavigationBar from "../components/NavigationBar";
-import Title from "../components/Title";
 import 'animate.css';
 import '../css/generic.css'
 import '../css/home.css';
-import GridBackground from "../components/GridBackground";
+import GridLayout from "../components/GridLayout";
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -24,12 +22,11 @@ function Home() {
 
         <div className="route-container home">
 
-          <NavigationBar />
-          <div className="home-content">
+          {/* <NavigationBar /> */}
+          {/* <div className="home-content">
             <Title />
-
-          </div>
-          <GridBackground />
+          </div> */}
+          <GridLayout />
         </div>
       )}
     </>

@@ -1,3 +1,7 @@
+/* ----------------------------- NAVIGATION BAR ----------------------------- */
+
+
+/* ------------------------------ HOME CONTENT ------------------------------ */
 .home-content {
     /* border: 2px solid green; */
     /* padding: 10% 5%; */
@@ -8,26 +12,13 @@
 
     margin: auto;
     /* overscroll-behavior: none; */
-    /* backdrop-filter: blur(3.5px);
-    background: rgba(255, 255, 255, 0.37); */
     /* text-align: center; */
 }
 
 .home-content h1 {
-    text-align: left;
-    /* border: 2px solid blue; */
-    margin: auto;
-    vertical-align: center;
-    padding: auto;
-    width: 70%;
-    /* padding: 10% 5%; */
-    font-size: 13vw;
-    user-select: none;
-    /* font-family: 'Ranchers', cursive; */
-    font-family: BrightDemo, serif;
-    line-height: 0.8;
-    animation-duration: 2s;
-    color: #1F1F1F!important;
+
+    backdrop-filter: blur(3.5px);
+    background: rgba(255, 255, 255, 0.37);
 }
 
 /* ------------------------------ TITLE @ HOME ------------------------------ */
@@ -81,10 +72,4 @@
 
 .period {
     animation-delay: 1.3s;
-}
-
-/* ----------------------------- SQUIGGLE LINES ----------------------------- */
-.squiggle {
-    height: 15rem;
-    position: absolute;
 }

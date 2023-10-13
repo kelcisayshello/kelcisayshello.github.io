@@ -1,0 +1,166 @@
+/* -------------------------------- TITLE BOX ------------------------------- */
+.name-title {
+    text-align: left;
+    vertical-align: center;
+    width: fit-content;
+    font-size: 6vw;
+    user-select: none;
+    font-family: BrightDemo, serif;
+    line-height: 0.8;
+    color: #1F1F1F !important;
+    height: fit-content;
+}
+
+/* ------------------------------- GRID LAYOUT ------------------------------ */
+#box-title {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: fit;
+    background-color: #FBFAF5;
+    border: 2px solid #E07B4A;
+    color: #1f1f1f;
+  }
+  
+  .grid-background {
+    /* border: 1px solid purple; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -90;
+  
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    gap: 0px;
+    padding: 0;
+  }
+  
+  @media screen and (max-width: 834px) {
+    .grid-background {
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-rows: 25% 25% 25% 25%;
+    }
+
+    .name-title {
+        font-size: 9vw;
+    }
+  }
+  
+  .grid-background>div {
+    text-align: center;
+    padding: 0px;
+    margin: 3px;
+    font-size: 30px;
+    border-radius: 0.1rem;
+    
+  }
+  
+  .blue {
+    background-color: #345D98;
+    box-shadow: 0px 4px 30px 30px rgba(52, 93, 152, 0.15);
+  }
+  
+  .red {
+    background-color: #DE6447;
+  }
+  
+  .orange {
+    background-color: #E07B4A;
+    box-shadow: 0px 4px 30px 30px rgba(224, 123, 74, 0.15);
+  }
+  
+  .yellow {
+    background-color: #F3C571;
+    box-shadow: 0px 4px 30px 30px rgba(243, 197, 113, 0.20);
+  }
+  
+  .green {
+    background-color: #3A7359;
+    box-shadow: 0px 4px 42px 16px rgba(58, 115, 89, 0.20);
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+  .opacity {
+    opacity: 1;
+  }
+  
+  .flicker {
+    -webkit-animation: flickerAnimation 6s infinite;
+    -moz-animation: flickerAnimation 6s infinite;
+    -o-animation: flickerAnimation 6s infinite;
+    animation: flickerAnimation 6s infinite;
+  }
+  
+  @keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .flicker:nth-child(3n+4) {
+    animation-delay: 3s;
+  }
+  
+  .flicker:nth-child(2n+1) {
+    animation-delay: 1s;
+  }
+  
+  .flicker:nth-child(3n+3) {
+    animation-delay: 2.4s;
+  }
