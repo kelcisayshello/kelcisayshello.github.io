@@ -5,11 +5,7 @@ import Title from "../components/Title";
 import 'animate.css';
 import '../css/generic.css'
 import '../css/home.css';
-import esquiggle from "../imgs/esquiggle.svg"
-import vsquiggle from "../imgs/vsquiggle.svg"
-import csquiggle from "../imgs/csquiggle.svg"
-
-
+import GridBackground from "../components/GridBackground";
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -33,12 +29,7 @@ function Home() {
             <Title />
 
           </div>
-          <img className="squiggle e" src={esquiggle} />
-          <img className="squiggle c" src={csquiggle} />
-          <img className="squiggle v" src={vsquiggle} />
-
-
-
+          <GridBackground />
         </div>
       )}
     </>

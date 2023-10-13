@@ -1,6 +1,7 @@
 /* ----------------------------- NAVIGATION BAR ----------------------------- */
 .navigation-container {
-  font-family: 'Space Mono', monospace;
+  /* font-family: 'Space Mono', monospace; */
+  font-family: 'Roboto', sans-serif;
   text-transform: lowercase;
   height: min-content;
   width: 85%;
@@ -10,7 +11,7 @@
   top: 5px;
   z-index: 99;
 
-  background: rgba(255, 255, 255, 0.27);
+  background: rgba(255, 255, 255, 0.37);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
@@ -73,4 +74,114 @@
   font-family: 'Space Mono', monospace;
   font-size: 0.75rem;
   padding: 0.4rem;
+}
+
+/* ------------------------------ RESUME ASSETS ----------------------------- */
+.google:first-child {
+  color: #5185EC !important;
+}
+
+.google:nth-child(2) {
+  color: #D85140 !important;
+}
+
+.google:nth-child(3) {
+  color: #F2BE42 !important;
+}
+
+/* ------------------------------- GRID LAYOUT ------------------------------ */
+.gridbackground {
+  /* border: 1px solid purple; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -90;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto ;
+  gap: 0px;
+  padding: 0 ;
+}
+
+.gridbackground > div {
+  /* background-color: #345D98; */
+  text-align: center;
+  padding: 0px ;
+  margin: 1px;
+  font-size: 30px;
+
+  /* transition: 2s ease-out; */
+  border-radius: 0.2rem;
+}
+
+.blue {
+  background-color: #345D98;
+  box-shadow: 0px 4px 30px 30px rgba(52, 93, 152, 0.15);
+}
+
+.red {
+  background-color: #DE6447;
+}
+
+.orange {
+  background-color: #E07B4A;
+  box-shadow: 0px 4px 30px 30px rgba(224, 123, 74, 0.15);
+}
+
+.yellow {
+  background-color: #F3C571;
+  box-shadow: 0px 4px 30px 30px rgba(243, 197, 113, 0.20);
+}
+
+.green {
+  background-color: #3A7359;
+  box-shadow: 0px 4px 42px 16px rgba(58, 115, 89, 0.20);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.flicker {
+  -webkit-animation: flickerAnimation 6s infinite;
+  -moz-animation: flickerAnimation 6s infinite;
+  -o-animation: flickerAnimation 6s infinite;
+   animation: flickerAnimation 6s infinite;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.flicker:nth-child(3n+4) {
+  animation-delay: 3s;
+}
+
+.flicker:nth-child(2n+1) {
+  animation-delay: 1s;
+}
+
+.flicker:nth-child(3n+3) {
+  animation-delay: 2.4s;
 }
