@@ -1,166 +1,233 @@
-/* -------------------------------- TITLE BOX ------------------------------- */
-.name-title {
-    text-align: left;
-    vertical-align: center;
-    width: fit-content;
-    font-size: 6vw;
-    user-select: none;
-    font-family: BrightDemo, serif;
-    line-height: 0.8;
-    color: #1F1F1F !important;
-    height: fit-content;
+/* ------------------------------- BOX LAYOUTS ------------------------------ */
+#box-title {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+  min-width: fit;
+  background-color: #1F1F1F;
 }
 
-/* ------------------------------- GRID LAYOUT ------------------------------ */
-#box-title {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: fit;
-    background-color: #FBFAF5;
-    border: 2px solid #E07B4A;
-    color: #1f1f1f;
-  }
-  
-  .grid-background {
-    /* border: 1px solid purple; */
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -90;
-  
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 33.3% 33.3% 33.3%;
-    gap: 0px;
-    padding: 0;
-  }
-  
-  @media screen and (max-width: 834px) {
-    .grid-background {
-      grid-template-columns: 33.3% 33.3% 33.3%;
-      grid-template-rows: 25% 25% 25% 25%;
-    }
+.hello {
+  text-align: left;
+  vertical-align: center;
+  width: fit-content;
+  font-size: 3.5rem;
+  user-select: none;
+  font-family: BrightDemo, serif;
+  line-height: 0.8;
+  color: #FBFAF5 !important;
+  height: fit-content;
+}
 
-    .name-title {
-        font-size: 9vw;
-    }
+#box-mwlove {
+  color: #3A7359 !important;
+  font-weight: 800;
+  background-color: #FBFAF5;
+  border: 3px solid #3A7359;
+  font-size: 1.6rem;
+  text-transform: lowercase;
+}
+
+.fully-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#box-date {
+  color: #FBFAF5;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+#box-resume {
+  background-color: #1F1F1F;
+  color: #FBFAF5;
+  text-align: left;
+  padding: 0 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  min-height: 100%;
+  max-height: 100%;
+  /* border: 1px solid magenta; */
+}
+
+/* 834px = iPad Pro (Landscape) */
+@media screen and (max-width: 834px) {
+  .hello {
+    font-size: 5rem;
   }
-  
-  .grid-background>div {
-    text-align: center;
-    padding: 0px;
-    margin: 3px;
-    font-size: 30px;
-    border-radius: 0.1rem;
-    
+
+  #box-mwlove {
+    font-size: 1.8rem;
   }
-  
-  .blue {
-    background-color: #345D98;
-    box-shadow: 0px 4px 30px 30px rgba(52, 93, 152, 0.15);
+
+  #box-date {
+    font-size: 4rem;
   }
-  
-  .red {
-    background-color: #DE6447;
+
+  #box-resume {
+    font-size: 1.6rem;
   }
-  
-  .orange {
-    background-color: #E07B4A;
-    box-shadow: 0px 4px 30px 30px rgba(224, 123, 74, 0.15);
+}
+
+@media screen and (max-width: 428px) {
+  #box-resume {
+    font-size: 1.2rem;
+    padding: 1rem;
   }
-  
-  .yellow {
-    background-color: #F3C571;
-    box-shadow: 0px 4px 30px 30px rgba(243, 197, 113, 0.20);
+
+  #box-title {
+    padding: 1rem;
   }
-  
-  .green {
-    background-color: #3A7359;
-    box-shadow: 0px 4px 42px 16px rgba(58, 115, 89, 0.20);
+
+  .hello {
+    font-size: 3rem;
   }
-  
-  .hidden {
-    opacity: 0;
+
+  #box-date {
+    font-size: 2.1rem;
   }
-  
-  .opacity {
+}
+
+.tilt-box {
+  text-decoration: none;
+}
+/* ------------------------------- GRID LAYOUT ------------------------------ */
+.grid-background {
+  /* border: 1px solid purple; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -90;
+
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  gap: 0px;
+  padding: 0;
+}
+
+@media screen and (max-width: 834px) {
+  .grid-background {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+}
+
+.grid-background>div {
+  text-align: center;
+  padding: 0px;
+  margin: 3px;
+  font-size: 30px;
+  border-radius: 0.1rem;
+
+}
+
+.blue {
+  background-color: #345D98;
+  /* box-shadow: 0px 4px 30px 30px rgba(52, 93, 152, 0.15); */
+}
+
+.red {
+  background-color: #DE6447;
+}
+
+.orange {
+  background-color: #E07B4A;
+  /* box-shadow: 0px 4px 30px 30px rgba(224, 123, 74, 0.15); */
+}
+
+.yellow {
+  background-color: #F3C571;
+  /* box-shadow: 0px 4px 30px 30px rgba(243, 197, 113, 0.20); */
+}
+
+.green {
+  background-color: #3A7359;
+  /* box-shadow: 0px 4px 42px 16px rgba(58, 115, 89, 0.20); */
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.flicker {
+  -webkit-animation: flickerAnimation 6s infinite;
+  -moz-animation: flickerAnimation 6s infinite;
+  -o-animation: flickerAnimation 6s infinite;
+  animation: flickerAnimation 6s infinite;
+}
+
+@keyframes flickerAnimation {
+  0% {
     opacity: 1;
   }
-  
-  .flicker {
-    -webkit-animation: flickerAnimation 6s infinite;
-    -moz-animation: flickerAnimation 6s infinite;
-    -o-animation: flickerAnimation 6s infinite;
-    animation: flickerAnimation 6s infinite;
+
+  50% {
+    opacity: 0;
   }
-  
-  @keyframes flickerAnimation {
-    0% {
-      opacity: 1;
-    }
-  
-    50% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+
+  100% {
+    opacity: 1;
   }
-  
-  @-o-keyframes flickerAnimation {
-    0% {
-      opacity: 1;
-    }
-  
-    50% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+}
+
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
   }
-  
-  @-moz-keyframes flickerAnimation {
-    0% {
-      opacity: 1;
-    }
-  
-    50% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+
+  50% {
+    opacity: 0;
   }
-  
-  @-webkit-keyframes flickerAnimation {
-    0% {
-      opacity: 1;
-    }
-  
-    50% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+
+  100% {
+    opacity: 1;
   }
-  
-  .flicker:nth-child(3n+4) {
-    animation-delay: 3s;
+}
+
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
   }
-  
-  .flicker:nth-child(2n+1) {
-    animation-delay: 1s;
+
+  50% {
+    opacity: 0;
   }
-  
-  .flicker:nth-child(3n+3) {
-    animation-delay: 2.4s;
+
+  100% {
+    opacity: 1;
   }
+}
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.flicker:nth-child(3n+4) {
+  animation-delay: 3s;
+}
+
+.flicker:nth-child(2n+1) {
+  animation-delay: 1s;
+}
+
+.flicker:nth-child(3n+3) {
+  animation-delay: 2.4s;
+}

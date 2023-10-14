@@ -1,7 +1,7 @@
 export default function Title() {
     return (
         <>
-            <h1 className="name-title">
+            <h1 className="hello">
                 Hi, I'm<br />
                 <span className="moving k animate__animated animate__bounce">K</span>
                 <span className="moving e animate__animated animate__bounce">e</span>
