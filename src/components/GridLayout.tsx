@@ -1,9 +1,15 @@
 import Title from "../components/Title";
 import '../css/gridlayout.css';
 import Tilt from 'react-parallax-tilt';
+import buildingblocks from "../assets/grid/blocks.png"
+import people from "../assets/grid/people.png"
 
 export default function GridLayout() {
     const date = new Date();
+    let ampm = date.getHours() >= 12 ? 'pm' : 'am';
+    let hours = (date.getHours() <= 9 ? '0' : '')+date.getHours();
+    let minutes = (date.getMinutes() <= 9 ? '0' : '')+date.getMinutes();
+
 
     return (
         <>
@@ -11,17 +17,27 @@ export default function GridLayout() {
                 <div id="box-title" className="firstbox fully-centered">
                     <Title />
                 </div>
-                <div className="orange "></div>
+
+                <Tilt tiltReverse={true}>
+                    <a className="tilt-box" href="#" target="_blank">
+                        <div id="box-image" className="orange tilted-tiles">
+                            <p>Project Showcase</p>
+                            <img className="image-box bks" src={buildingblocks} />
+                        </div>
+                    </a>
+                </Tilt>
+
                 <div className="flicker blue "></div>
                 <div id="box-date" className="green fully-centered">
-                    <p>{date.getDate()} {date.toLocaleString('default', { month: 'short' })}</p>
+                    <p className="date">{date.getDate()} {date.toLocaleString('default', { month: 'short' })}</p>
+                    <p className="time">{hours + ":" + minutes} {ampm.toUpperCase()} <br /> {date.toString().match(/\(([A-Za-z\s].*)\)/)![1]}</p>
                 </div>
 
-                <div className="flicker red"> </div>
+                <div className="red"></div>
 
                 <Tilt tiltReverse={true}>
                     <a className="tilt-box" href="https://www.kelcimensah.dev/#/resume" target="_blank">
-                        <div id="box-resume" className="yellow fully-centered">
+                        <div id="box-resume" className="fully-centered tilted-tiles">
                             <p>Take a look at my resume &nbsp;<i className="fa-solid fa-arrow-right"></i></p>
                         </div>
                     </a>
@@ -29,14 +45,20 @@ export default function GridLayout() {
 
 
                 <div className="orange "> </div>
-                <div className="blue "> </div>
 
-                <div id="box-mwlove" className="fully-centered">
-                    <p>Made with <br /> &lt;3</p>
-                </div>
+                <Tilt tiltReverse={true}>
+                    <a className="tilt-box" href="#" target="_blank">
+                        <div id="box-image" className="blue tilted-tiles">
+                            <p>Contact me</p>
+                            <img className="image-box ppl" src={people} />
+                        </div>
+                    </a>
+                </Tilt>
+
+                <div className="flicker green" style={{animationDelay: "7s"}}> </div>
                 <div className="blue"> </div>
                 <div className="yellow"> </div>
-                <div className="red "> </div>
+                <div className="flicker red " style={{animationDelay: "4s"}}> </div>
             </div>
         </>
     );

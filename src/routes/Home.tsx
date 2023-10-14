@@ -21,11 +21,6 @@ function Home() {
       ) : (
 
         <div className="route-container home">
-
-          {/* <NavigationBar /> */}
-          {/* <div className="home-content">
-            <Title />
-          </div> */}
           <GridLayout />
         </div>
       )}
