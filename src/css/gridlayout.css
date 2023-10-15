@@ -92,7 +92,7 @@
 
 #box-date {
   color: #FBFAF5;
-  font-family: "Inter", sans-serif;
+  font-family: "Gabarito", sans-serif;
   text-transform: uppercase;
   flex-direction: column;
 }
@@ -135,8 +135,9 @@
 
 /* --------------- 1536px = Desktop Computer (landscape only) --------------- */
 @media screen and (max-width: 1536px) {
-  #box-resume {
-    font-size: 1.4rem;
+  #box-resume p {
+    font-size: 1.45rem;
+    width: 70%;
   }
 
   #box-image p {
@@ -156,6 +157,14 @@
 
   .hello {
     font-size: 5.5rem;
+  }
+}
+
+/* ------------------ 1280px = MacBook Pro 13" (landscape) ------------------ */
+@media screen and (max-width: 1280px) {
+  #box-resume p {
+    font-size: 1.1rem;
+    width: 80%;
   }
 }
 

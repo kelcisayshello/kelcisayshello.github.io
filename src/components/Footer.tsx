@@ -1,4 +1,4 @@
-import '../css/components.css'
+import '../css/components/footer.css'
 
 export default function Footer() {
     const date = new Date();
