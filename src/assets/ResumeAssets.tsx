@@ -3,7 +3,7 @@ import "../css/components.css"
 export function Google() {
     return (
         <>
-            <div className="google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
+            <p className="company-logos google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></p>
         </>
     );
 }
@@ -43,12 +43,20 @@ export function GoogleInternship() {
     );
 }
 
+export function NASA() {
+    return (
+        <>
+            <p className="company-logos nasa">NASA</p>
+        </>
+    );
+}
+
 export function NASAInternship() {
     return (
         <>
             <div className="experience-item">
                 <h4 className="title">Graphics and Visualization Lab Intern</h4>
-                <p className="location"><span className="hyperlink">NASA</span>, Cleveland, Ohio</p>
+                <p className="location"><NASA />, Cleveland, Ohio</p>
                 <p><i className="fa-regular fa-calendar"></i> August 2020 - August 2021</p>
 
                 <ul>
@@ -72,12 +80,20 @@ export function NASAInternship() {
     );
 }
 
+export function ARMY() {
+    return (
+        <>
+            <p className="company-logos army">U.S. ARMY</p>
+        </>
+    );
+}
+
 export function USArmyInternship() {
     return (
         <>
             <div className="experience-item">
                 <h4 className="title">Cyber Security Intern</h4>
-                <p className="location"><a className="hyper">U.S. Army</a> – Aberdeen Proving Ground, Aberdeen, MD</p>
+                <p className="location"><ARMY /> (Aberdeen Proving Ground), Aberdeen, MD</p>
                 <p><i className="fa-regular fa-calendar"></i> July 2018</p>
 
                 <ul>

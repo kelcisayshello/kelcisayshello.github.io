@@ -5,9 +5,8 @@ import NavigationBar from '../components/NavigationBar';
 import { useState, useEffect } from 'react';
 import { Widget, WidgetLinked, InvolvementItem } from '../components/Resume'
 import { GoogleInternship, NASAInternship, USArmyInternship } from '../assets/ResumeAssets'
-import '../css/generic.css'
 import '../css/w3.css'
-import '../css/resume.css'
+import '../css/pages/resume.css'
 
 function Resume() {
   const [loading, setLoading] = useState(false);
@@ -31,7 +30,7 @@ function Resume() {
 
               {/* resume title container */}
               <div className="title-container">
-                <h1>Resume</h1>
+                <h1 className="titleheader">Resume</h1>
                 <div className="btn-download">
                   <a href="https://docs.google.com/document/d/1aRP5LGOwz1ywaAzwiP_AlnI-LAGG3Q0VKHdKFPD7Hfg/edit?usp=sharing"
                     target="_blank">Download</a>
@@ -62,7 +61,7 @@ function Resume() {
                     <hr />
 
                     {/* education > about me container */}
-                    <h3 style={{ color: "#345D98" }}>Education.</h3>
+                    <h3 className="subheader" style={{ color: "#345D98" }}>Education.</h3>
 
                     <div className="education-item">
                       <p>Dual Bachelors in Computer Science and Cognitive Science, High Honors</p>
@@ -74,7 +73,7 @@ function Resume() {
                     </div>
 
                     {/* skills > about me container */}
-                    <h3 style={{ color: "#EC8248" }}>Skills.</h3>
+                    <h3 className="subheader" style={{ color: "#EC8248" }}>Skills.</h3>
 
                     <div className="education-item">
                       <h4>Languages + Libraries</h4>
@@ -98,7 +97,7 @@ function Resume() {
                 {/* work experience container */}
                 <div className="experience-container w3-container w3-card w3-margin-bottom">
 
-                  <h2 style={{ color: "#DA4E3F", margin: "2.5rem 0 1rem" }}>
+                  <h2 className="subheader" style={{ color: "#DA4E3F", margin: "2.5rem 0 1rem" }}>
                     Work Experience.
                   </h2>
 
@@ -121,7 +120,7 @@ function Resume() {
                 {/* professional involvement container */}
                 <div className="involvement-container w3-container w3-card w3-margin-bottom">
 
-                  <h2 style={{ color: "#3A7359", margin: "2.5rem 0 1rem" }}>Professional Involvement.</h2>
+                  <h2 className="subheader" style={{ color: "#3A7359", margin: "2.5rem 0 1rem" }}>Professional Involvement.</h2>
 
                   <InvolvementItem title="Minority Engineering Educational Task (MEET) - Rutgers University NSB Chapter" date="2019 - 2023" content="Pre-professional student organization for Black, Hispanic, Asian, and other minority-representing student identities within engineering and other technology-based STEM fields." />
 

@@ -1,8 +1,7 @@
 import PageLoader from "../components/PageLoader";
 import { useState, useEffect } from 'react';
 import 'animate.css';
-import '../css/generic.css'
-import '../css/home.css';
+import '../css/pages/home.css';
 import GridLayout from "../components/GridLayout";
 
 function Home() {

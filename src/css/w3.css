@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Sarabun:wght@400;600&display=swap');
-
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
 html {
     box-sizing: border-box
@@ -773,7 +771,7 @@ img {
 }
 
 .w3-content {
-    max-width: 980px
+    max-width: 1024px
 }
 
 .w3-auto {
