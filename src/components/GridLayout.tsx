@@ -36,9 +36,9 @@ export default function GridLayout() {
                 <div className="red"></div>
 
                 <Tilt tiltReverse={true}>
-                    <a className="tilt-box" href="https://www.kelcimensah.dev/#/resume" target="_blank">
+                    <a className="tilt-box" href="https://www.kelcimensah.dev/#/resume">
                         <div id="box-resume" className="fully-centered tilted-tiles">
-                            <p>Take a look at my resume &nbsp;<i className="fa-solid fa-arrow-right"></i></p>
+                            <p>Take a look at my <br/> resume &nbsp;<i className="fa-solid fa-arrow-right"></i></p>
                         </div>
                     </a>
                 </Tilt>

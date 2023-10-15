@@ -1,4 +1,3 @@
-/* ------------------------------- BOX LAYOUTS ------------------------------ */
 #box-title {
   grid-column-start: span 2;
   grid-row-start: span 2;
@@ -18,7 +17,7 @@
   height: fit-content;
 }
 
-/* ---------------------------------- HOME ---------------------------------- */
+/* ------------------------------- NAME TITLE ------------------------------- */
 .moving {
   display: inline-block;
 }
@@ -118,7 +117,6 @@
   text-align: left;
   padding: 0 2rem;
   font-size: 1.3rem;
-  /* border: 1px solid magenta; */
 }
 
 #box-image {
@@ -135,7 +133,33 @@
   height: auto;
 }
 
-/* 1194px = iPad Pro 11 (landscape) */
+/* --------------- 1536px = Desktop Computer (landscape only) --------------- */
+@media screen and (max-width: 1536px) {
+  #box-resume {
+    font-size: 1.4rem;
+  }
+
+  #box-image p {
+    font-size: 1.2rem;
+  }
+
+  .ppl {
+    margin-top: 28px!important;
+    width: 13rem !important;
+  }
+
+  .bks {
+    margin-top: 15px;
+    width: 12rem !important;
+  }
+
+
+  .hello {
+    font-size: 5.5rem;
+  }
+}
+
+/* -------------------- 1194px = iPad Pro 11 (landscape) -------------------- */
 @media screen and (max-width: 1194px) {
 
   #box-image p {
@@ -144,7 +168,7 @@
 
   .ppl {
     margin-top: 25px;
-    width: 13rem!important;
+    width: 13rem !important;
   }
 
   .bks {
@@ -195,6 +219,7 @@
   }
 }
 
+/* ------------------------- 834px = iPad (portrait) ------------------------ */
 @media screen and (max-width: 428px) {
 
   #box-resume,
@@ -255,14 +280,21 @@
   /* border: 1px solid purple; */
   height: 100%;
   width: 100%;
-  position: absolute;
-  z-index: -90;
+  max-width: 1536px;
+  max-height: 723px;
 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  z-index: -90;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 33.3% 33.3% 33.3%;
   gap: 0px;
   padding: 0;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 834px) {
