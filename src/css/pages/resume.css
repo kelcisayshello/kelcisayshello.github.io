@@ -146,3 +146,15 @@ h4 {
     font-size: 1rem;
     color: #1f1f1f;
 }
+
+/* ------------------------ MOBILE SIZING FOR IPHONES ----------------------- */
+@media screen and (max-width: 428px) {
+    .w3-container,
+    .w3-panel {
+        margin: 10px 0;
+    }
+
+    .w3-third, .w3-twothird {
+        padding: 0!important;
+    }
+}
