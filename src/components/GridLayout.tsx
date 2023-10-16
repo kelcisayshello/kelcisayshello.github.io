@@ -20,7 +20,7 @@ export default function GridLayout() {
 
                 <Tilt tiltReverse={true}>
                     <a className="tilt-box" href="#" target="_blank">
-                        <div id="box-image" className="orange tilted-tiles">
+                        <div id="box-image" className="gridpadding orange tilted-tiles">
                             <p>Project Showcase</p>
                             <img className="image-box bks" src={buildingblocks} />
                         </div>
@@ -47,8 +47,8 @@ export default function GridLayout() {
                 <div className="orange "> </div>
 
                 <Tilt tiltReverse={true}>
-                    <a className="tilt-box" href="#" target="_blank">
-                        <div id="box-image" className="blue tilted-tiles">
+                    <a className="tilt-box" href="/#/contact">
+                        <div id="box-image" className="gridpadding blue tilted-tiles">
                             <p>Contact me</p>
                             <img className="image-box ppl" src={people} />
                         </div>

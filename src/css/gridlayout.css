@@ -218,13 +218,13 @@
   }
 
   .ppl {
-    margin-top: 60px !important;
+    margin-top: 30px !important;
     width: 13rem !important;
   }
 
   .bks {
-    margin-top: 52px !important;
-    width: 20vh !important;
+    margin-top: 22px !important;
+    width: 15vh !important;
   }
 }
 
@@ -301,7 +301,6 @@
   transform: translate(-50%, -50%);
   position: absolute;
 
-  z-index: -90;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 33.3% 33.3% 33.3%;
@@ -319,7 +318,6 @@
 
 .grid-background>div {
   text-align: center;
-  padding: 0px;
   margin: 3px;
   font-size: 30px;
   border-radius: 0.1rem;
@@ -417,4 +415,8 @@
   100% {
     opacity: 1;
   }
+}
+
+.gridpadding {
+  padding: 0.8rem 0.4rem;
 }

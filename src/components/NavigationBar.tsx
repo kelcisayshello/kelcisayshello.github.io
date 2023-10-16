@@ -11,6 +11,7 @@ export default function NavigationBar() {
                     <ul>
                         <li><Link className="link home" to="/">Home</Link></li>
                         <li><Link className="link resume" to="/resume">Resume</Link></li>
+                        <li><Link className="link contact" to="/contact">Contact</Link></li>
                         <li className="logo"> <img src={logo} alt="KLËMM logo" /> </li>
                     </ul>
                 </nav>
