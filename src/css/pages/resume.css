@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .resume-container {
     width: 85%;
@@ -27,8 +27,7 @@
 }
 
 .btn-download a:hover {
-    color: #3A7359;
-    opacity: 0.6;
+    color: #ea4335;
 }
 
 /* --------------------------- ABOUT ME CONTAINER --------------------------- */
@@ -41,7 +40,8 @@
 }
 
 .aboutme-container .widget {
-    font-size: 0.77rem;
+    font-size: 0.87rem;
+    line-height: 1.5rem;
 }
 
 .widget {
@@ -50,6 +50,15 @@
 
 .aboutme-container a {
     color: #1f1f1f;
+}
+
+.aboutme-information {
+    margin: 1rem 0;
+}
+
+.aboutme-name {
+    font-weight: 800;
+    font-family: "Gabarito", sans-serif;
 }
 
 /* -------------------------------- HEADINGS -------------------------------- */
@@ -129,9 +138,8 @@ h4 {
 }
 
 .army {
-    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-family: 'Russo One', sans-serif;
     color: #1f1f1f;
-    font-size: 1.25rem;
 }
 
 /* --------------------------------- HEADERS -------------------------------- */

@@ -46,17 +46,20 @@ function Resume() {
                   <div className="w3-display-container photo-container">
                     <img src={profile} alt="Avatar" />
                     <div className="w3-display-bottomleft w3-container">
-                      <h2>Kelci Mensah</h2>
+                      <h1 className="aboutme-name">Kelci Mensah</h1>
                     </div>
                   </div>
 
                   {/* information > about me */}
                   <div className="w3-container aboutme-container">
 
-                    <Widget icon="fa-regular fa-map" content="Atlanta, GA" />
-                    <WidgetLinked icon="fa-brands fa-github fa-fw" content="@kelcisayshello" link="https://www.github.com/kelcisayshello" />
-                    <WidgetLinked icon="fa-regular fa-paper-plane fa-fw" content="kelcimensah@gmail.com" link="mailto:kelcimensah@gmail.com" />
-                    <WidgetLinked icon="fa-brands fa-linkedin-in fa-fw" content="Kelci Mensah" link="https://www.linkedin.com/in/kelcimensah" />
+                    <div className="aboutme-information">
+                      <Widget icon="fa-regular fa-map" content="Atlanta, GA" />
+                      <WidgetLinked icon="fa-brands fa-github fa-fw" content="@kelcisayshello" link="https://www.github.com/kelcisayshello" />
+                      <WidgetLinked icon="fa-regular fa-paper-plane fa-fw" content="kelcimensah@gmail.com" link="mailto:kelcimensah@gmail.com" />
+                      <WidgetLinked icon="fa-brands fa-linkedin-in fa-fw" content="Kelci Mensah" link="https://www.linkedin.com/in/kelcimensah" />
+                    </div>
+
 
                     <hr />
 
@@ -73,7 +76,7 @@ function Resume() {
                     </div>
 
                     {/* skills > about me container */}
-                    <h3 className="subheader" style={{ color: "#EC8248" }}>Skills.</h3>
+                    <h3 className="subheader" style={{ color: "#1F1F1F" }}>Skills.</h3>
 
                     <div className="education-item">
                       <h4>Languages + Libraries</h4>
