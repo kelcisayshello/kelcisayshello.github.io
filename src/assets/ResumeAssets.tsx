@@ -1,5 +1,3 @@
-import "../css/components.css"
-
 export function Google() {
     return (
         <>
