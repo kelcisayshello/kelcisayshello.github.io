@@ -125,7 +125,7 @@ function Resume() {
 
                   <h2 className="subheader" style={{ color: "#3A7359", margin: "2.5rem 0 1rem" }}>Professional Involvement.</h2>
 
-                  <InvolvementItem title="Minority Engineering Educational Task (MEET) - Rutgers University NSB Chapter" date="2019 - 2023" content="Pre-professional student organization for Black, Hispanic, Asian, and other minority-representing student identities within engineering and other technology-based STEM fields." />
+                  <InvolvementItem title="Minority Engineering Educational Task (MEET) - Rutgers University NSBE Chapter" date="2019 - 2023" content="Pre-professional student organization for Black, Hispanic, Asian, and other minority-representing student identities within engineering and other technology-based STEM fields." />
 
                   <InvolvementItem title="Douglass-DIMACS Computer Science Living Learning Community" date="2019 - 2023" content="A curated living-learning center and community for women-representing undergraduate students majoring in computer science." />
 
