@@ -124,7 +124,7 @@ export function USArmyInternship() {
 interface CertParams {
     certname: string;
     issued: string;
-    credid: number;
+    credid: string;
 }
 
 export function Certification({ certname, issued, credid }: CertParams) {
