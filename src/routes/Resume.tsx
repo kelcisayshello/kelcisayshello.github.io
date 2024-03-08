@@ -4,7 +4,7 @@ import PageLoader from '../components/PageLoader'
 import NavigationBar from '../components/NavigationBar';
 import { useState, useEffect } from 'react';
 import { Widget, WidgetLinked, InvolvementItem } from '../components/Resume'
-import { GoogleCTR, GoogleInternship, NASAInternship, USArmyInternship } from '../assets/ResumeAssets'
+import { GoogleCTR, GoogleInternship, NASAInternship, USArmyInternship, Certification } from '../assets/ResumeAssets'
 import '../css/w3.css'
 import '../css/pages/resume.css'
 
@@ -125,10 +125,27 @@ function Resume() {
                   <br />
                 </div>
 
-                {/* professional involvement container */}
+                {/* certifications container */}
                 <div className="involvement-container w3-container w3-card w3-margin-bottom">
+                  <h2 className="subheader" style={{ color: "#f3c572", margin: "2.5rem 0 1rem" }}>Certifications.</h2>
 
-                  <h2 className="subheader" style={{ color: "#3A7359", margin: "2.5rem 0 1rem" }}>Professional Involvement.</h2>
+                  <Certification certname="Google Cloud Professional DevOps Engineer" issued="February 2024" credid="94343784" />
+
+                  <hr />
+                  <Certification certname="Google Cloud Professional Cloud Architect" issued="February 2024" credid="96470237" />
+
+                  <hr />
+
+                  <Certification certname="Google Cloud Associate Cloud Engineer" issued="January 2024" credid="92273471" />
+
+
+                  <br />
+                  <br />
+                </div >
+
+                {/* academic involvement container */}
+                <div className="involvement-container w3-container w3-card w3-margin-bottom">
+                  <h2 className="subheader" style={{ color: "#3A7359", margin: "2.5rem 0 1rem" }}>Academic Involvement.</h2>
 
                   <InvolvementItem title="Minority Engineering Educational Task (MEET) - Rutgers University NSBE Chapter" date="2019 - 2023" content="Pre-professional student organization for Black, Hispanic, Asian, and other minority-representing student identities within engineering and other technology-based STEM fields." />
 

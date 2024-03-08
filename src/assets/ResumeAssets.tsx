@@ -34,13 +34,13 @@ export function GoogleInternship() {
                         Created audio and visual media content to advocate the Google Cloud developer and enterprise partnership.
                         <ul>
                             <li>
-                                Contributed to the production life cycle of YouTube content for Google Cloud including contextual research, scripting, and starring in visual media. [<a className="hyperlink" href="#" style={{ color: "#cc0033"}}>view</a>]
+                                Contributed to the production life cycle of YouTube content for Google Cloud including contextual research, scripting, and starring in visual media. [<a className="hyperlink" href="#" style={{ color: "#cc0033" }}>view</a>]
                             </li>
                             <li>
                                 Supported the production lifecycle of audio content for Google Cloud Platform by starring in podcasts featuring internal and external clients.
                             </li>
                             <li>
-                                Published a technical blog piece advocating benefits of student and entry-level developers using Google Cloud Platform’s (GCP) <a style={{ color: "#0057E7" }} href="https://cloud.google.com/bigquery/" className="hyperlink" target="_blank">Big Query</a> solution. [<a className="hyperlink" href="#" style={{ color: "#cc0033"}}>view</a>]
+                                Published a technical blog piece advocating benefits of student and entry-level developers using Google Cloud Platform’s (GCP) <a style={{ color: "#0057E7" }} href="https://cloud.google.com/bigquery/" className="hyperlink" target="_blank">Big Query</a> solution. [<a className="hyperlink" href="#" style={{ color: "#cc0033" }}>view</a>]
                             </li>
                         </ul>
                     </li>
@@ -108,7 +108,7 @@ export function USArmyInternship() {
 
                 <ul>
                     <li>
-                        Assisted cyber-security specialists within the Department of Defense (D.O.D) in maintaining sensitive digital safety on military-grade operating systems. 
+                        Assisted cyber-security specialists within the Department of Defense (D.O.D) in maintaining sensitive digital safety on military-grade operating systems.
                         <ul>
                             <li>
                                 Preserved IP address anonymity and practiced invasive malware defense strategies using Linux command line tools.
@@ -116,6 +116,25 @@ export function USArmyInternship() {
                         </ul>
                     </li>
                 </ul>
+            </div>
+        </>
+    );
+}
+
+interface CertParams {
+    certname: string;
+    issued: string;
+    credid: number;
+}
+
+export function Certification({ certname, issued, credid }: CertParams) {
+    return (
+        <>
+            <div className="certification">
+                <img src="https://static-00.iconduck.com/assets.00/google-cloud-icon-2048x1646-7admxejz.png" />
+                <p className="certname">{certname}</p>
+                <p className="issued">Issued on {issued}</p>
+                <p className="credid">Credential ID: {credid}</p>
             </div>
         </>
     );
