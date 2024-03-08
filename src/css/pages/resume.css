@@ -46,6 +46,11 @@
 
 .widget {
     text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.aboutme-container a:hover {
+    color: #ea4335;
 }
 
 .aboutme-container a {

@@ -4,7 +4,7 @@ import PageLoader from '../components/PageLoader'
 import NavigationBar from '../components/NavigationBar';
 import { useState, useEffect } from 'react';
 import { Widget, WidgetLinked, InvolvementItem } from '../components/Resume'
-import { GoogleInternship, NASAInternship, USArmyInternship } from '../assets/ResumeAssets'
+import { GoogleCTR, GoogleInternship, NASAInternship, USArmyInternship } from '../assets/ResumeAssets'
 import '../css/w3.css'
 import '../css/pages/resume.css'
 
@@ -80,12 +80,12 @@ function Resume() {
 
                     <div className="education-item">
                       <h4>Languages + Libraries</h4>
-                      <p>Python, HTML (HyperText Markup Language), JavaScript, CSS (Cascading Style Sheets), React (React.js), SQL, Java, TypeScript, Git</p>
+                      <p>Python, Numpy, Pandas, HTML, CSS, JavaScript, TypeScript, React.js, SQL, Git</p>
                     </div>
 
                     <div className="education-item">
                       <h4>Software + Digital Tools</h4>
-                      <p>Figma, Adobe Photoshop, Procreate iOS, Microsoft Office 365, Google Workspace</p>
+                      <p>Google Cloud Platform, Google Workspace, Figma, Adobe Photoshop, Procreate iOS, Microsoft Office 365</p>
                     </div>
 
                     <br />
@@ -103,6 +103,11 @@ function Resume() {
                   <h2 className="subheader" style={{ color: "#DA4E3F", margin: "2.5rem 0 1rem" }}>
                     Work Experience.
                   </h2>
+
+                  {/* google ctr full time */}
+                  <GoogleCTR />
+
+                  <hr />
 
                   {/* google internship */}
                   <GoogleInternship />

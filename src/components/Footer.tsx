@@ -7,7 +7,7 @@ export default function Footer() {
         <>
             <div className="footer-container">
                 <footer>
-                    <p>Copyright © {date.getFullYear()} • Made with &lt;3</p>
+                    <p>Copyright © {date.getFullYear()} • Made with a :)</p>
                 </footer>
             </div>
         </>

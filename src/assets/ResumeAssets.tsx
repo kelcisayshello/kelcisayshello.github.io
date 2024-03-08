@@ -6,6 +6,18 @@ export function Google() {
     );
 }
 
+export function GoogleCTR() {
+    return (
+        <>
+            <div className="experience-item">
+                <h4 className="title">Cloud Technical Resident, Cloud Academy</h4>
+                <p className="location"><Google />, Atlanta, GA</p>
+                <p><i className="fa-regular fa-calendar"></i> November 2023 - Present </p>
+            </div>
+        </>
+    );
+}
+
 export function GoogleInternship() {
     return (
         <>
@@ -28,12 +40,12 @@ export function GoogleInternship() {
                                 Supported the production lifecycle of audio content for Google Cloud Platform by starring in podcasts featuring internal and external clients.
                             </li>
                             <li>
-                                Published a technical blog piece advocating benefits of student and entry-level developers using Google Cloud Platform’s (GCP) Platform-as-a-Service (PaaS) <a style={{ color: "#D01CB3" }} href="https://cloud.google.com/bigquery/" className="hyperlink" target="_blank">Big Query</a> tool. [<a className="hyperlink" href="#" style={{ color: "#0057E7"}}>view</a>]
+                                Published a technical blog piece advocating benefits of student and entry-level developers using Google Cloud Platform’s (GCP) <a style={{ color: "#0057E7" }} href="https://cloud.google.com/bigquery/" className="hyperlink" target="_blank">Big Query</a> solution. [<a className="hyperlink" href="#" style={{ color: "#cc0033"}}>view</a>]
                             </li>
                         </ul>
                     </li>
                     <li>
-                        Contributed to the <a style={{ color: "#00B0E7" }} href="https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute" className="hyperlink" target="_blank">Google Computer Science Summer Institute</a> program as a teacher’s assistant (TA) for the computer science principles curriculum.
+                        Contributed to the <a style={{ color: "#3A7359" }} href="https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute" className="hyperlink" target="_blank">Google Computer Science Summer Institute</a> program as a teacher’s assistant (TA) for the computer science principles curriculum.
                     </li>
                 </ul>
             </div>
