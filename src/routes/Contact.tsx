@@ -46,14 +46,21 @@ function Home() {
             </Tilt>
 
             <div id="box-text" className="padding">
-              <p>Let's keep in contact! <br/> Get in touch with me I'll try to get back to you ASAP :)</p>
+              <p>Let's stay connected! <br/> Send an email or get in touch with me through LinkedIn or Twitter :)</p>
             </div>
 
-            <div className="padding" id="box-information">
+            <div id="box-email" className="padding">
               <POCNoLink method="e-mail" content="kelcimensah@gmail.com" />
+            </div>
+
+            <div className="padding" id="box-social">
+              <POC method="Twitter" content="@kelcisayshello" link="https://www.twitter.com/kelcisayshello" />
               <POC method="LinkedIn" content="in/kelcimensah" link="https://www.linkedin.com/in/kelcimensah" />
               <POC method="GitHub" content="@kelcisayshello" link="https://www.github.com/kelcisayshello" />
             </div>
+
+            
+
           </div>
         </div>
       )}
