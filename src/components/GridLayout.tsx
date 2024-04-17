@@ -7,9 +7,8 @@ import people from "../assets/grid/people.png"
 export default function GridLayout() {
     const date = new Date();
     let ampm = date.getHours() >= 12 ? 'pm' : 'am';
-    let hours = (date.getHours() <= 9 ? '0' : '')+date.getHours();
-    let minutes = (date.getMinutes() <= 9 ? '0' : '')+date.getMinutes();
-
+    let hours = (date.getHours() <= 9 ? '0' : '') + date.getHours();
+    let minutes = (date.getMinutes() <= 9 ? '0' : '') + date.getMinutes();
 
     return (
         <>
@@ -19,15 +18,15 @@ export default function GridLayout() {
                 </div>
 
                 <Tilt tiltReverse={true}>
-                    <a className="tilt-box" target="_blank">
+                    <a className="tilt-box" href="/#/studio">
                         <div id="box-projects" className="box-image gridpadding orange tilted-tiles">
-                            <p>Project Showcase</p>
+                            <p>Studio Showcase</p>
                             <img className="image-box bks" src={buildingblocks} />
                         </div>
                     </a>
                 </Tilt>
 
-                <div className="flicker blue "></div>
+                <div className="flicker blue"></div>
                 <div id="box-date" className="green fully-centered">
                     <p className="date">{date.getDate()} {date.toLocaleString('default', { month: 'short' })}</p>
                     <p className="time">{hours + ":" + minutes} {ampm.toUpperCase()} <br /> {date.toString().match(/\(([A-Za-z\s].*)\)/)![1]}</p>
@@ -55,10 +54,10 @@ export default function GridLayout() {
                     </a>
                 </Tilt>
 
-                <div className="flicker green" style={{animationDelay: "7s"}}> </div>
+                <div className="flicker green" style={{ animationDelay: "7s" }}> </div>
                 <div className="blue"> </div>
                 <div className="yellow"> </div>
-                <div className="flicker red " style={{animationDelay: "4s"}}> </div>
+                <div className="flicker red " style={{ animationDelay: "4s" }}> </div>
             </div>
         </>
     );

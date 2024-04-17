@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+/* ------------------------- STUDIO CONTAINER ------------------------- */
+.studio-container {
+    width: 85%;
+    /* border: 2px solid magenta; */
+}
+
+/* ------------------------- PAGE TITLE CONTAINER ------------------------- */
+.studio-title-container {
+    /* border: 2px solid blue; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.studio-title-container h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 3rem;
+}

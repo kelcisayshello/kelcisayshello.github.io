@@ -30,7 +30,7 @@ function Resume() {
 
               {/* resume title container */}
               <div className="title-container">
-                <h1 className="titleheader">Resume</h1>
+                <h1 className="h1-header">Resume</h1>
                 <div className="btn-download">
                   <a href="https://docs.google.com/document/d/1aRP5LGOwz1ywaAzwiP_AlnI-LAGG3Q0VKHdKFPD7Hfg/edit?usp=sharing"
                     target="_blank">Download</a>
