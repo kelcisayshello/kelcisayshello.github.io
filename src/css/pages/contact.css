@@ -1,12 +1,24 @@
 @media screen and (max-width: 1024px) {
     .contact-container {
-        width: 75vw !important;
+        width: 75vw!important;
+    }
+}
+
+/* ---------------- MOBILE VIEW FOR IPAD PRO 11 IN LANDSCAPE ---------------- */
+@media screen and (max-width: 1194px){
+    .contact-container {
+        width: 75vw!important;
+        /* border: 2px solid magenta; */
     }
 }
 
 @media screen and (max-width: 834px) {
     #box-text {
         grid-column-start: span 2;
+    }
+
+    #box-social {
+        grid-column-start: span 1!important;
     }
 
     .contact-container {
@@ -24,6 +36,7 @@
     }
 }
 
+/* ------------------- MOBILE VIEW FOR IPHONES AND BELOW ------------------ */
 @media screen and (max-width: 428px) {
     .contact-image {
         margin: 3rem auto!important;
@@ -62,10 +75,6 @@
     border-radius: 0.1rem;
     overflow: hidden;
     /* padding: 15px; */
-}
-
-.padding {
-    padding: 0.8rem;
 }
 
 #box-social {

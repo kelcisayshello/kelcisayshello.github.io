@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-
 /* ------------------------- STUDIO CONTAINER ------------------------- */
 .studio-container {
     width: 85%;
     /* border: 2px solid magenta; */
+}
+
+.studio-summary {
+    margin-bottom: 70px;
 }
 
 /* ------------------------- PAGE TITLE CONTAINER ------------------------- */
@@ -19,4 +22,59 @@
     text-transform: uppercase;
     display: inline-block;
     font-size: 3rem;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+/* ---------------------------------- GRID ---------------------------------- */
+.studio-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem 0.5rem;
+
+    padding: 0;
+    margin-bottom: 70px;
+}
+
+.tilt-tile {
+    border-radius: 0.1rem;
+}
+
+.tile-header {
+    font-weight: 700 !important;
+    font-family: "Gabarito", sans-serif;
+    margin: 0.5rem 0;
+}
+
+.s-demos {
+    background-color: #1f1f1f;
+    opacity: 1;
+    background-image: radial-gradient(#4c4c4c 0.5px, transparent 0.5px), radial-gradient(#4c4c4c 0.5px, #1f1f1f 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    color: #FBFAF5;
+    grid-column: span 3;
+}
+
+.s-articles {
+    background-color: #345D98;
+    background-image:  linear-gradient(#2e5388 1px, transparent 1px), linear-gradient(to right, #2e5388 1px, #345D98 1px);
+    background-size: 20px 20px;
+    grid-column: span 2;
+    color: #FBFAF5;
+}
+
+.s-projects {
+    grid-column: span 5;
+
+    background-color: #e07b4a;
+    background-image: url("../../assets/cubes.png");
+}
+
+/* ------------------- MOBILE GRID FOR IPHONE ------------------ */
+@media screen and (max-width: 692px) {
+    .s-articles, .s-demos, .s-projects {
+        grid-column: span 5;
+    }
 }

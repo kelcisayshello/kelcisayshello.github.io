@@ -41,7 +41,7 @@ body {
 
 .route-container {
     width: 100%;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     margin: 0;
     height: 100%;
     padding: 0;
@@ -54,8 +54,16 @@ body {
     src: local('BrightDemo'), url(../fonts/BrightDemo.otf) format('opentype');
 }
 
+.padding {
+    padding: 0.8rem;
+}
+
 /* --------------------------------- HEADERS -------------------------------- */
 .h1-header, .subheader {
     font-weight: 800;
     font-family: "Gabarito", sans-serif;
+}
+
+.h1-header {
+    margin: 4rem 0.5rem 0 0;
 }

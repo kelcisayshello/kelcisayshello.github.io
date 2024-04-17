@@ -2,6 +2,7 @@ import Footer from '../components/Footer'
 import PageLoader from '../components/PageLoader'
 import NavigationBar from '../components/NavigationBar';
 import { useState, useEffect } from 'react';
+import Tilt from 'react-parallax-tilt';
 import '../css/w3.css'
 import '../css/pages/studio.css'
 
@@ -27,10 +28,39 @@ function Studio() {
             <div className="w3-row-padding">
 
               <div className="studio-title-container">
-                <h1 className="h1-header">Studio Showcase</h1>
+                <h1 className="h1-header">Studio Showcase.</h1>
               </div>
 
-              <p>sample text here</p>
+              <p className='studio-summary'>Explore my Studio! This space hosts a growing collection of hobby projects, learning resources, articles, and other technical content. Navigate through opinion pieces, completed projects, and live demos by clicking on a tile below.</p>
+
+              <div className="studio-grid">
+                <Tilt className="s-demos tilt-tile" tiltReverse={true}>
+                  <a target="_blank">
+                    <div className="padding">
+                      <h1 className='tile-header'>Demos</h1>
+                      <p>Take a look at my playground of interactive demos and visualizations, showcasing some of my coolest personal projects. They're live and ready for clicks.</p>
+                    </div>
+                  </a>
+                </Tilt>
+
+                <Tilt className="s-articles tilt-tile" tiltReverse={true}>
+                  <a target="_blank">
+                    <div className="padding">
+                      <h1 className='tile-header'>Articles</h1>
+                      <p>This space is for informative, opinionated, or hobby-interest technical writing pieces. Mostly for me but feel free to take a look!</p>
+                    </div>
+                  </a>
+                </Tilt>
+
+                <Tilt className="s-projects tilt-tile" tiltReverse={true}>
+                  <a target="_blank">
+                    <div className="padding">
+                      <h1 className='tile-header'>Projects</h1>
+                      <p>Browse through a collection of personal projects built from college-days to the present. Subject matter topics include front-end design and web development, data structures and algorithms, machine learning, cloud computing, and data science.</p>
+                    </div>
+                  </a>
+                </Tilt>
+              </div>
 
             </div>
           </div>
