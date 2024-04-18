@@ -1,7 +1,5 @@
-import Footer from '../components/Footer'
-import PageLoader from '../components/PageLoader'
-import NavigationBar from '../components/NavigationBar';
 import { useState, useEffect } from 'react';
+import { Footer, NavigationBar, PageLoader } from '../components/SharedLayout'
 import Tilt from 'react-parallax-tilt';
 import '../css/w3.css'
 import '../css/pages/studio.css'
@@ -31,11 +29,11 @@ function Studio() {
                 <h1 className="h1-header">Studio Showcase.</h1>
               </div>
 
-              <p className='studio-summary'>Explore my Studio! This space hosts a growing collection of hobby projects, learning resources, articles, and other technical content. Navigate through opinion pieces, completed projects, and live demos by clicking on a tile below.</p>
+              <p className='studio-summary'>Explore my Studio! This space hosts a growing collection of hobby projects, learning resources, articles, and other technical content. Navigate through by clicking on a tile below.</p>
 
               <div className="studio-grid">
                 <Tilt className="s-demos tilt-tile" tiltReverse={true}>
-                  <a target="_blank">
+                  <a href="/#/studio/demos">
                     <div className="padding">
                       <h1 className='tile-header'>Demos</h1>
                       <p>Take a look at my playground of interactive demos and visualizations, showcasing some of my coolest personal projects. They're live and ready for clicks.</p>

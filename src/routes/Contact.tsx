@@ -1,10 +1,10 @@
-import PageLoader from "../components/PageLoader";
-import Tilt from 'react-parallax-tilt';
-import { useState, useEffect } from 'react';
 import '../css/pages/contact.css'
-import home from "../assets/grid/home.png"
-import document from "../assets/grid/document.png"
-import {POC, POCNoLink} from "../assets/ContactAssets";
+import { PageLoader } from "../components/SharedLayout";
+import Tilt from 'react-parallax-tilt';
+import img_home from "../assets/imgs/home.png"
+import img_document from "../assets/imgs/document.png"
+import { useState, useEffect } from 'react';
+import { POC, POCNoLink } from "../assets/ContactAssets";
 
 
 function Home() {
@@ -31,7 +31,7 @@ function Home() {
               <a className="tilt-box" href="/">
                 <div id="box-home" className="padding">
                   <p>Go home</p>
-                  <img className="contact-image" src={home} />
+                  <img className="contact-image" src={img_home} />
                 </div>
               </a>
             </Tilt>
@@ -40,7 +40,7 @@ function Home() {
               <a className="tilt-box" href="/#/resume">
                 <div id="box-resumebox" className="padding">
                   <p>View my resume</p>
-                  <img className="contact-image" src={document} />
+                  <img className="contact-image" src={img_document} />
                 </div>
               </a>
             </Tilt>

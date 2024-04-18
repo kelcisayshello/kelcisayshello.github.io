@@ -1,10 +1,8 @@
-import Footer from '../components/Footer'
-import profile from '../assets/profile.jpg'
-import PageLoader from '../components/PageLoader'
-import NavigationBar from '../components/NavigationBar';
+import img_profile from '../assets/imgs/profile.jpg'
 import { useState, useEffect } from 'react';
 import { Widget, WidgetLinked, InvolvementItem } from '../components/Resume'
 import { GoogleCTR, GoogleInternship, NASAInternship, USArmyInternship, Certification } from '../assets/ResumeAssets'
+import { Footer, NavigationBar, PageLoader } from '../components/SharedLayout'
 import '../css/w3.css'
 import '../css/pages/resume.css'
 
@@ -44,7 +42,7 @@ function Resume() {
 
                   {/* photo container > about me container */}
                   <div className="w3-display-container photo-container">
-                    <img src={profile} alt="Avatar" />
+                    <img src={img_profile} alt="Avatar" />
                     <div className="w3-display-bottomleft w3-container">
                       <h1 className="aboutme-name">Kelci Mensah</h1>
                     </div>

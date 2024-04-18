@@ -1,10 +1,22 @@
-.navigation-container {
+/* --------------------------------- FOOTER --------------------------------- */
+.footer-container {
+    /* border: 2px solid magenta; */
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+  
+  .footer-container p {
+      margin: 1rem auto 1.5rem!important;
+  }
+
+  .navigation-container {
     font-family: 'Roboto', sans-serif;
     height: min-content;
     width: 85%;
 
-    /* this is the maximum width that all content on the site will reach */
-    max-width: 1024px;
+    max-width: 1024px;  /* this is the maximum width that all content on the site will reach */
     margin: 0 auto;
     border-radius: 0.4rem;
     position: sticky;
@@ -18,6 +30,7 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+/* ----------------------------- NAVIGATION BAR ----------------------------- */
 .navigation-container ul {
     list-style-type: none;
     padding: 0 1rem;
@@ -42,11 +55,11 @@
 }
 
 .studio:hover {
-    color: #345D98;
+    color: #E07B4A;
 }
 
 .contact:hover {
-    color: #E07B4A;
+    color: #345D98;
 }
 
 .resume:hover {
