@@ -51,7 +51,7 @@ body {
 
 @font-face {
     font-family: 'BrightDemo';
-    src: local('BrightDemo'), url(../fonts/BrightDemo.otf) format('opentype');
+    src: local('BrightDemo'), url(../assets/fonts/BrightDemo.otf) format('opentype');
 }
 
 .padding {

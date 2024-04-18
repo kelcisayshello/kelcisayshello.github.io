@@ -1,11 +1,10 @@
 import '../css/pages/contact.css'
-import { PageLoader } from "../components/SharedLayout";
-import Tilt from 'react-parallax-tilt';
 import img_home from "../assets/imgs/home.png"
 import img_document from "../assets/imgs/document.png"
+import Tilt from 'react-parallax-tilt';
 import { useState, useEffect } from 'react';
-import { POC, POCNoLink } from "../assets/ContactAssets";
-
+import { POC, POCNoLink } from "../components/Contact";
+import { PageLoader } from "../components/SharedLayout";
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -58,8 +57,6 @@ function Home() {
               <POC method="LinkedIn" content="in/kelcimensah" link="https://www.linkedin.com/in/kelcimensah" />
               <POC method="GitHub" content="@kelcisayshello" link="https://www.github.com/kelcisayshello" />
             </div>
-
-            
 
           </div>
         </div>

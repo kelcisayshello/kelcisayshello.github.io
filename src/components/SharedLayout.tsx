@@ -1,7 +1,6 @@
 import logo from "../assets/imgs/logo.png"
 import { Link } from "react-router-dom";
 import "../css/sharedlayout.css"
-import '../css/pageloader.css'
 
 export function PageLoader() {
     return (

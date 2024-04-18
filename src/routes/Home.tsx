@@ -1,6 +1,5 @@
 import 'animate.css';
 import '../css/pages/home.css';
-import '../css/gridlayout.css';
 import Tilt from 'react-parallax-tilt';
 import Title from "../components/Home";
 import img_blocks from "../assets/imgs/blocks.png"

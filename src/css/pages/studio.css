@@ -37,8 +37,14 @@
     margin-bottom: 70px;
 }
 
+.studio-grid a {
+    text-decoration: none;
+    color: #FBFAF5;
+}
+
 .tilt-tile {
     border-radius: 0.1rem;
+    min-height: 12rem;
 }
 
 .tile-header {
@@ -50,7 +56,7 @@
 .s-demos {
     background-color: #1f1f1f;
     opacity: 1;
-    background-image: radial-gradient(#4c4c4c 0.5px, transparent 0.5px), radial-gradient(#4c4c4c 0.5px, #1f1f1f 0.5px);
+    background-image: radial-gradient(#5c5b5b 0.5px, transparent 0.5px), radial-gradient(#5c5b5b 0.5px, #1f1f1f 0.5px);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
     color: #FBFAF5;
@@ -76,5 +82,9 @@
 @media screen and (max-width: 692px) {
     .s-articles, .s-demos, .s-projects {
         grid-column: span 5;
+    }
+
+    .tilt-tile {
+        min-height: 13rem;
     }
 }
