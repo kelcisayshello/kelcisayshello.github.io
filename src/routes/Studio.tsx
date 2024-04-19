@@ -51,7 +51,7 @@ function Studio() {
                 </Tilt>
 
                 <Tilt className="s-projects tilt-tile" tiltReverse={true}>
-                  <a target="_blank">
+                  <a href="/#/studio/projects">
                     <div className="padding">
                       <h1 className='tile-header'>Projects</h1>
                       <p>Browse through a collection of personal projects built from college-days to the present. Subject matter topics include front-end design and web development, data structures and algorithms, machine learning, cloud computing, and data science.</p>
