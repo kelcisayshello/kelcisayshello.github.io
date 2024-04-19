@@ -20,6 +20,10 @@
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -35,10 +39,7 @@ body {
     background-color: #FBFAF5;
 }
 
-* {
-    box-sizing: border-box;
-}
-
+/* --------------------------------- ROUTES --------------------------------- */
 .route-container {
     width: 100%;
     /* border: 3px solid red; */
@@ -58,8 +59,30 @@ body {
     padding: 0.8rem;
 }
 
+.route-title-container {
+    /* border: 2px solid blue; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.route-title-container h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 0;
+    margin: 4.2rem 0 0;
+    font-family: "Gabarito", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.route-page-summary {
+    margin-bottom: 4rem;
+}
+
 /* --------------------------------- HEADERS -------------------------------- */
-.h1-header, .subheader {
+.h1-header,
+.subheader {
     font-weight: 800;
     font-family: "Gabarito", sans-serif;
 }

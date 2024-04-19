@@ -26,12 +26,11 @@ function Resume() {
           <div className="resume-container w3-content">
             <div className="w3-row-padding">
 
-              {/* resume title container */}
-              <div className="title-container">
-                <h1 className="h1-header">Live Resume.</h1>
+              <div className="route-title-container">
+                <h1>Live Resume.</h1>
                 <div className="btn-download">
                   <a href="https://docs.google.com/document/d/1aRP5LGOwz1ywaAzwiP_AlnI-LAGG3Q0VKHdKFPD7Hfg/edit?usp=sharing"
-                    target="_blank">Download</a>
+                    target="_blank">&nbsp;&nbsp;Download</a>
                 </div>
               </div>
 

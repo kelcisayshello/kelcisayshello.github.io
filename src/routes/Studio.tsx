@@ -25,11 +25,11 @@ function Studio() {
           <div className="studio-container w3-content">
             <div className="w3-row-padding">
 
-              <div className="studio-title-container">
-                <h1 className="h1-header">Studio Showcase.</h1>
+              <div className="route-title-container">
+                <h1>Studio Showcase.</h1>
               </div>
 
-              <p className='studio-summary'>Explore my studio! This space hosts a growing collection of hobby projects, learning resources, articles, and other technical content.</p>
+              <p className='route-page-summary'>Explore my studio! This space hosts a growing collection of hobby projects, learning resources, articles, and other technical content.</p>
 
               <div className="studio-grid">
                 <Tilt className="s-demos tilt-tile" tiltReverse={true}>
