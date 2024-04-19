@@ -7,7 +7,7 @@
     /* border: 2px solid magenta; */
 }
 
-/* ------------------------- PAGE TITLE CONTAINER ------------------------- */
+/* ------------------------- STUDIO TITLE CONTAINER ------------------------- */
 .studio-title-container {
     /* border: 2px solid blue; */
     width: 100%;
@@ -22,7 +22,7 @@
     margin-bottom: 0;
 }
 
-/* ---------------------------------- GRID ---------------------------------- */
+/* --------------------------- STUDIO GRID - MAIN --------------------------- */
 .studio-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -74,7 +74,7 @@
     background-image: url("../../assets/imgs/cubes.png");
 }
 
-/* ------------------- MOBILE GRID FOR IPHONE ------------------ */
+/* ----------------------- STUDIO MOBILE GRID - IPHONE ---------------------- */
 @media screen and (max-width: 692px) {
     .s-articles, .s-demos, .s-projects {
         grid-column: span 5;
@@ -83,4 +83,31 @@
     .tilt-tile {
         min-height: 13rem;
     }
+}
+
+/* --------------------------------- GRIDBOX -------------------------------- */
+.gridbox {
+    /* default color will be black - #1f1f1f */
+    border: 2px solid #1F1F1F; 
+    padding: 0px 0.4rem;
+    border-radius: 1px;
+}
+
+.gridbox {
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+    transition: all 0.15s ease-in-out;
+    color: #FBFAF5;
+}
+
+.gridbox h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Gabarito", sans-serif;
+    /* color: #1F1F1F; */
+}
+
+.gridbox:hover {
+    box-shadow: rgba(0, 0, 0, 0.72) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
 }

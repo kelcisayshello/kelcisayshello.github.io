@@ -1,7 +1,7 @@
 import Tilt from 'react-parallax-tilt';
 
-// steel blue, sinopia, burnt sienna, hyunyadi yellow, cinnabar, hooker's green, lapis lazuli
-const colors = ['#4F7CAC', "#C73E1D", '#E07B4A', '#F4C672', "#E15F40", "#3A7359", "#345D98"];
+// steel blue, sinopia, burnt sienna, hyunyadi yellow, cinnabar, hooker's green, lapis lazuli, eerie black
+const colors = ['#4F7CAC', "#C73E1D", '#E07B4A', '#F4C672', "#E15F40", "#3A7359", "#345D98", "#1F1F1F"];
 
 // Fisher-Yates Shuffle Algorithm: All colors have an equal chance of being picked regardless of their position in the original array.
 function fisherYatesShuffle(colors) {
@@ -25,22 +25,28 @@ interface GridBoxProps {
 
 export function GridBox({ children, link, title, description }: GridBoxProps) {
     const randomColor = getBorderColor();
-    const gridStyles = {
-        borderColor: randomColor,
-        borderWidth: "2px",
+    let fontColor = "#FBFAF5";
+    const gridStyle = {
+        backgroundColor: randomColor,
     };
 
-    return (
+    if (randomColor == "#F4C672") {
+        fontColor = "#1F1F1F";
+    }
 
-        <Tilt className="gridbox" style={gridStyles}>
-            <a target="_blank" href={link}>
-                <div>
-                    <h1>{title}</h1>
-                    <p>{description}</p>
-                    {children}
-                </div>
-            </a>
-        </Tilt>
+    const textStyle = {
+        color: fontColor
+    }
+
+    return (
+        <a target="_blank" className="gridbox" style={gridStyle} href={link}>
+
+            <div>
+                <h1 style={textStyle}>{title}</h1>
+                <p>{description}</p>
+                {children}
+            </div>
+        </a>
 
     );
 }

@@ -33,7 +33,7 @@ function Studio() {
 
               <div className="studio-grid">
                 <Tilt className="s-demos tilt-tile" tiltReverse={true}>
-                  <a href="/#/studio/demos">
+                  <a href="#">
                     <div className="padding">
                       <h1 className='tile-header'>Demos</h1>
                       <p>Take a look at my playground of interactive demos and visualizations, showcasing some of my coolest personal projects. They're live and ready for clicks.</p>
@@ -42,7 +42,7 @@ function Studio() {
                 </Tilt>
 
                 <Tilt className="s-articles tilt-tile" tiltReverse={true}>
-                  <a target="_blank">
+                  <a href="#">
                     <div className="padding">
                       <h1 className='tile-header'>Articles</h1>
                       <p>This space is for informative, opinionated, or hobby-interest technical writing pieces. Mostly for me but feel free to take a look!</p>
@@ -51,7 +51,7 @@ function Studio() {
                 </Tilt>
 
                 <Tilt className="s-projects tilt-tile" tiltReverse={true}>
-                  <a target="_blank">
+                  <a href="/#/studio/projects">
                     <div className="padding">
                       <h1 className='tile-header'>Projects</h1>
                       <p>Browse through a collection of personal projects built from college-days to the present. Subject matter topics include front-end design and web development, data structures and algorithms, machine learning, cloud computing, and data science.</p>

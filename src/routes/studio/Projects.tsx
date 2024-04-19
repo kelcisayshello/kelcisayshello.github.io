@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Footer, NavigationBar, PageLoader } from '../../components/SharedLayout'
 import '../../css/w3.css'
-import "../../css/pages/demos.css"
+import "../../css/pages/projects.css"
 import { GridBox } from '../../components/Studio';
 
-function Demos() {
+function Projects() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -21,18 +21,18 @@ function Demos() {
         <div className="route-container">
           <NavigationBar />
 
-          <div className="demos-container w3-content">
+          <div className="projects-container w3-content">
             <div className="w3-row-padding">
 
-              <div className="route-title-container demos-title">
-                <h1>Demos.</h1>
+              <div className="route-title-container projects-title">
+                <h1>Projects.</h1>
               </div>
 
               {/* <p className='route-page-summary'>Sample text here.</p> */}
 
-              <div className="demos-grid">
-                <GridBox title="Sample Demo" link='https://www.google.com' />
-                <GridBox title='B' />
+              <div className="projects-grid">
+                <GridBox title="P90 – A Visual Studio Code Theme" link='https://marketplace.visualstudio.com/items?itemName=kelcisayshello.p90' />
+                <GridBox title='Pickr. Eye Dropper Google Chrome Extension Tool' />
                 <GridBox title='C' />
                 <GridBox title='D' />
                 <GridBox title='E' />
@@ -56,4 +56,4 @@ function Demos() {
   )
 }
 
-export default Demos;
+export default Projects;

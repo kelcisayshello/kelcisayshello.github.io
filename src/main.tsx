@@ -6,6 +6,7 @@ import Contact from "./routes/Contact"
 import Studio from "./routes/Studio"
 
 import Demos from "./routes/studio/Demos"
+import Projects from "./routes/studio/Projects";
 
 const root = createRoot(document.getElementById("root")!);
 
@@ -17,6 +18,8 @@ root.render(
       <Route path="/contact" element={<Contact />} />
       <Route path="/studio" element={<Studio />} />
         <Route path="/studio/demos" element={<Demos />} />
+        <Route path="/studio/projects" element={<Projects />} />
+
     </Routes>
   </HashRouter>
 );
