@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Footer, NavigationBar, PageLoader } from '../../components/SharedLayout'
+import { GridBox } from '../../components/Studio';
 import '../../css/w3.css'
 import "../../css/pages/projects.css"
-import { GridBox } from '../../components/Studio';
 
 function Projects() {
   const [loading, setLoading] = useState(false);
@@ -32,7 +32,7 @@ function Projects() {
 
               <div className="projects-grid">
                 <GridBox title="P90 – A Visual Studio Code Theme" link='https://marketplace.visualstudio.com/items?itemName=kelcisayshello.p90' />
-                <GridBox title='Pickr. Eye Dropper Google Chrome Extension Tool' />
+                <GridBox title='Pickr. Eye Dropper Google Chrome Extension Tool' link='https://github.com/kelcisayshello/pickr'/>
                 <GridBox title='C' />
                 <GridBox title='D' />
                 <GridBox title='E' />

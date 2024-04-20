@@ -33,7 +33,7 @@ function Studio() {
 
               <div className="studio-grid">
                 <Tilt className="s-demos tilt-tile" tiltReverse={true}>
-                  <a href="#">
+                  <a href="/#/studio/demos">
                     <div className="padding">
                       <h1 className='tile-header'>Demos</h1>
                       <p>Take a look at my playground of interactive demos and visualizations, showcasing some of my coolest personal projects. They're live and ready for clicks.</p>
