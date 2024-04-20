@@ -60,22 +60,22 @@
 
 /* ---------------------------------- LINKS --------------------------------- */
 .demos-grid a {
-    text-decoration: underline;
     color: #1f1f1f;
-    text-decoration-style: dotted;
+    text-decoration: none;
     transition: 0.14s ease-in-out;
-
 }
 
 .demos-grid a:hover {
     color: blue;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
 /* ----------------------------------- SVG ---------------------------------- */
 .demos-grid svg {
     width: auto;
-    height: 2rem;
-    margin-bottom: 0.5rem;
+    height: 1.6rem;
+    margin: -0.3rem auto 0.5rem;
     transition: 0.14s ease-in-out;
     color: #1F1F1F;
     /* fill: #3A7359; */
