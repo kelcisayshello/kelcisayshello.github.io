@@ -38,23 +38,10 @@
     color: #FBFAF5;
 }
 
-.tilt-tile {
-    border-radius: 0.1rem;
-    min-height: 12rem;
-}
-
-.tile-header {
-    font-weight: 700 !important;
-    font-family: "Gabarito", sans-serif;
-    margin: 0.5rem 0;
-}
-
 .s-demos {
     background-color: #1f1f1f;
-    opacity: 1;
-    background-image: radial-gradient(#5c5b5b 0.5px, transparent 0.5px), radial-gradient(#5c5b5b 0.5px, #1f1f1f 0.5px);
+    background-image:  linear-gradient(#292929 1px, transparent 1px), linear-gradient(to right, #292929 1px, #1f1f1f 1px);
     background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
     color: #FBFAF5;
     grid-column: span 3;
 }
@@ -103,4 +90,16 @@
     font-weight: 500;
     font-family: "Gabarito", sans-serif;
     /* color: #1F1F1F; */
+}
+
+.tilt-tile {
+    border-radius: 0.1rem;
+    min-height: 5rem;
+}
+
+.tile-header {
+    font-weight: 500;
+    font-family: "Gabarito", sans-serif;
+    margin: 0.5rem 0.8rem;
+    font-size: 3.5rem;
 }
