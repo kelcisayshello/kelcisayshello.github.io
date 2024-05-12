@@ -50,15 +50,23 @@ export function GridBox({ children, link, title, description }: GridBoxProps) {
 
 export function GridBoxBorder({ children, link, title, description }: GridBoxProps) {
     const randomColor = getBorderColor();
+    let fontColor = randomColor;
+
+    if(randomColor === "#F4C672" ) {
+        fontColor = "#1F1F1F";
+    }
+
+    const boxTextStyle = {
+        color: fontColor,
+    }
 
     const boxStyle = {
-        color: "#1F1F1F",
-        borderColor: randomColor, // Change color on hover
+        borderColor: randomColor,
     }
 
     return (
         <div className="gridbox" style={boxStyle}>
-            <a target="_blank" href={link}>
+            <a target="_blank" href={link} style={boxTextStyle}>
                 <h1>{title}</h1>
                 <p>{description}</p>
             </a>

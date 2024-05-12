@@ -43,7 +43,7 @@ function Studio() {
                 <Tilt className="s-articles tilt-tile" tiltReverse={true}>
                   <a>
                     <div className="padding">
-                      <h1 className='tile-header'>Articles & Tutorials</h1>
+                      <h1 className='tile-header'>Articles & Notebooks</h1>
                     </div>
                   </a>
                 </Tilt>
