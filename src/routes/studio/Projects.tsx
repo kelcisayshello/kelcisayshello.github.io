@@ -24,24 +24,22 @@ function Projects() {
           <div className="projects-container w3-content">
             <div className="w3-row-padding">
 
-              <div className="route-title-container projects-title">
+              <div className="route-title-container">
                 <h1>Projects.</h1>
               </div>
 
-              {/* <p className='route-page-summary'>Sample text here.</p> */}
+              <p className='route-page-summary'>Navigate to a project's source code by hovering over the box and clicking anywhere within the boundaries.</p>
 
               <div className="projects-grid">
-                <GridBox title="P90 – A Visual Studio Code Theme" link='https://marketplace.visualstudio.com/items?itemName=kelcisayshello.p90' />
+                <GridBox 
+                  title="P90 – A Visual Studio Code Theme" 
+                  link='https://marketplace.visualstudio.com/items?itemName=kelcisayshello.p90'
+                />
                 <GridBox title='Pickr. Eye Dropper Google Chrome Extension Tool' link='https://github.com/kelcisayshello/pickr'/>
-                <GridBox title='C' />
-                <GridBox title='D' />
-                <GridBox title='E' />
-                <GridBox title='F' />
-                <GridBox title='G' />
-                <GridBox title='H' />
-                <GridBox title='I' />
-                <GridBox title='J' />
-                <GridBox title='K' />
+                <GridBox 
+                  title="WordUp – Neumorphic Word Counter" 
+                  link='https://github.com/kelcisayshello/wordup'
+                />
               </div>
 
             </div>

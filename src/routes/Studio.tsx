@@ -29,21 +29,21 @@ function Studio() {
                 <h1>Studio Showcase.</h1>
               </div>
 
-              <p className='route-page-summary'>Explore my studio space which hosts a growing collection of side projects, learning resources, articles, and other technical content!</p>
+              <p className='route-page-summary'>Explore a comprehensive and growing collection of side projects, written materials, and other technical content.</p>
 
               <div className="studio-grid">
                 <Tilt className="s-demos tilt-tile" tiltReverse={true}>
                   <a href="/#/studio/demos">
                     <div className="padding">
-                      <h1 className='tile-header'>Demos</h1>
+                      <h1 className='tile-header'>Live Demos & Content</h1>
                     </div>
                   </a>
                 </Tilt>
 
                 <Tilt className="s-articles tilt-tile" tiltReverse={true}>
-                  <a href="#">
+                  <a>
                     <div className="padding">
-                      <h1 className='tile-header'>Articles</h1>
+                      <h1 className='tile-header'>Articles & Tutorials</h1>
                     </div>
                   </a>
                 </Tilt>
@@ -51,7 +51,7 @@ function Studio() {
                 <Tilt className="s-projects tilt-tile" tiltReverse={true}>
                   <a href="/#/studio/projects">
                     <div className="padding">
-                      <h1 className='tile-header'>Projects</h1>
+                      <h1 className='tile-header'>Side Projects & Source Code Repositories</h1>
                     </div>
                   </a>
                 </Tilt>
