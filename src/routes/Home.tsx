@@ -34,7 +34,7 @@ function Home() {
             </div>
 
             <Tilt tiltReverse={true}>
-              <a className="tilt-box" href="/#/studio">
+              <a className="tilt-box">
                 <div id="box-projects" className="box-image gridpadding orange tilted-tiles">
                   <p>Studio Showcase</p>
                   <img className="image-box bks" src={img_blocks} />
