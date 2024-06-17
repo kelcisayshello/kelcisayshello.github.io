@@ -30,7 +30,7 @@ export function NavigationBar() {
                 <nav>
                     <ul>
                         <li><Link className="link home" to="/">Home</Link></li>
-                        <li><Link className="link studio" to="/studio">Studio</Link></li>
+                        <li><Link className="link studio" to="/projects">Projects</Link></li>
                         <li><Link className="link resume" to="/resume">Resume</Link></li>
                         <li><Link className="link contact" to="/contact">Contact</Link></li>
                         <li className="logo"> <img src={logo} alt="Colorful personal website logo with the initials KLËMM" /> </li>

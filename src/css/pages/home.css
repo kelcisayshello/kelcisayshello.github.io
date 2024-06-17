@@ -1,12 +1,3 @@
-.home-content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-
-  margin: auto;
-}
-
 #box-title {
   grid-column-start: span 2;
   grid-row-start: span 2;
@@ -86,10 +77,10 @@
   text-transform: lowercase;
 }
 
-#box-projects {
+/* #box-projects {
   cursor: not-allowed;
   filter: grayscale(1)!important;
-}
+} */
 
 .fully-centered {
   display: flex;
@@ -163,7 +154,7 @@
   }
 
   .bks {
-    margin-top: 15px;
+    margin-top: 25px;
     width: 12rem !important;
   }
 
@@ -178,6 +169,10 @@
   #box-resume p {
     font-size: 1.1rem;
     width: 80%;
+  }
+
+  .image-box {
+    margin-top: 35px!important;
   }
 }
 
@@ -298,7 +293,7 @@
 }
 
 .bks {
-  margin-top: 15px;
+  margin-top: 35px;
   width: 10.5rem;
 }
 
@@ -306,7 +301,7 @@
 .grid-background {
   /* border: 1px solid purple; */
   height: 100%;
-  width: 100%;
+  width: 97%;
   max-width: 1536px;
   max-height: 723px;
 
