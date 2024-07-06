@@ -58,7 +58,6 @@ export default function Home() {
 
             <Block css_class="red" />
 
-
             <ActionBlock
               href_link='/#/resume'
               plain_text='Take a look at my resume &nbsp;'
@@ -78,10 +77,11 @@ export default function Home() {
               img_src={img_people}
             />
 
-            <Block css_class="flicker green" style={{ animationDelay: "7s" }} />
+            <Block css_class="flicker green" delay="7s" />
+
             <Block css_class="blue" />
             <Block css_class="yellow" />
-            <Block css_class="flicker red" style={{ animationDelay: "4s" }} />
+            <Block css_class="flicker red" delay="4s" />
           </div>
         </div>
       )}

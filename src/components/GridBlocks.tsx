@@ -9,11 +9,12 @@ interface BlockArgs {
     img_css?: string;
     img_src?: string;
     children?: React.ReactNode;
+    delay?: string
 }
 
-export function Block({ block_id, css_class, children }: BlockArgs) {
+export function Block({ block_id, css_class, children, delay}: BlockArgs) {
     return (
-        <div id={block_id} className={css_class}>
+        <div id={block_id} className={css_class} style={{ animationDelay: `${delay}` }}>
             {children}
         </div>
     );

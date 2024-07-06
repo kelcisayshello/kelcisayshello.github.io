@@ -38,7 +38,7 @@ interface CertArgs {
     date_issued: string;
 }
 
-export function Certification({ certificate_name, date_issued, credential_id }: CertArgs) {
+export function Certification({ certificate_name, date_issued }: CertArgs) {
     return (
         <>
             <div className="certification">
