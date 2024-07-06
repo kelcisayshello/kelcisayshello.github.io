@@ -1,68 +1,64 @@
 import '../css/pages/contact.css'
 import img_home from "../assets/imgs/home.png"
 import img_document from "../assets/imgs/document.png"
-import Tilt from 'react-parallax-tilt';
-import { useState, useEffect } from 'react';
-import { POC, POCNoLink } from "../components/Contact";
+import Method from "../components/MethodOfContact";
 import { PageLoader } from "../components/ReusableComponents";
+import { ActionBlock } from "../components/GridBlocks";
+import { useState, useEffect } from 'react';
 
-function Home() {
-  const [loading, setLoading] = useState(false);
+export default function Contact() {
+    const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1200);
-  }, []);
-  return (
-    <>
-      {loading ? (
-        <PageLoader />
-      ) : (
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 1200);
+    }, []);
+    return (
+        <>
+            {loading ? (
+                <PageLoader />
+            ) : (
 
-        <div className="route-container contact">
-          {/* <NavigationBar /> */}
+                <div className="route-container contact">
+                    <div className="contact-container">
 
-          <div className="contact-container">
+                        <ActionBlock
+                            href_link='/'
+                            plain_text='Go home'
+                            block_id='box-home'
+                            css_class='padding'
+                            img_css='contact-image'
+                            img_src={img_home}
+                        />
 
-            <Tilt tiltReverse={true}>
-              <a className="tilt-box" href="/">
-                <div id="box-home" className="padding">
-                  <p>Go home</p>
-                  <img className="contact-image" src={img_home} />
+                        <ActionBlock
+                            href_link='/#/resume'
+                            plain_text='View my resume'
+                            block_id='box-resumebox'
+                            css_class='padding'
+                            img_css='contact-image'
+                            img_src={img_document}
+                        />
+
+                        <div id="box-text" className="padding">
+                            <p>Let's stay connected! <br /> Send me an email or get in touch on LinkedIn and Twitter :)</p>
+                        </div>
+
+                        <div id="box-email" className="padding">
+                            <Method method="e-mail" plain_text="kelcimensah@gmail.com" />
+                        </div>
+
+                        <div className="padding" id="box-social">
+                            <Method method="Twitter" plain_text="@kelcisayshello" href_link='https://www.twitter.com/kelcisayshello' />
+                            <Method method="LinkedIn" plain_text="in/kelcimensah" href_link='https://www.linkedin.com/in/kelcimensah' />
+                            <Method method="GitHub" plain_text="@kelcisayshello" href_link='https://www.github.com/kelcisayshello' />
+                        </div>
+
+                    </div>
                 </div>
-              </a>
-            </Tilt>
-
-            <Tilt tiltReverse={true}>
-              <a className="tilt-box" href="/#/resume">
-                <div id="box-resumebox" className="padding">
-                  <p>View my resume</p>
-                  <img className="contact-image" src={img_document} />
-                </div>
-              </a>
-            </Tilt>
-
-            <div id="box-text" className="padding">
-              <p>Let's stay connected! <br/> Send an email or get in touch with me through LinkedIn or Twitter :)</p>
-            </div>
-
-            <div id="box-email" className="padding">
-              <POCNoLink method="e-mail" content="kelcimensah@gmail.com" />
-            </div>
-
-            <div className="padding" id="box-social">
-              <POC method="Twitter" content="@kelcisayshello" link="https://www.twitter.com/kelcisayshello" />
-              <POC method="LinkedIn" content="in/kelcimensah" link="https://www.linkedin.com/in/kelcimensah" />
-              <POC method="GitHub" content="@kelcisayshello" link="https://www.github.com/kelcisayshello" />
-            </div>
-
-          </div>
-        </div>
-      )}
-    </>
-  )
-}
-
-export default Home
+            )}
+        </>
+    );
+};
