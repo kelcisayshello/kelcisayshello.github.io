@@ -1,4 +1,4 @@
-export default function Title() {
+export default function JumpingName() {
     return (
         <>
             <h1 className="hello">

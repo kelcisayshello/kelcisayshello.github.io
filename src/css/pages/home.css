@@ -16,7 +16,7 @@
   height: fit-content;
 }
 
-/* ------------------------------- NAME TITLE ------------------------------- */
+/* --------------------------- JUMPING NAME TITLE --------------------------- */
 .moving {
   display: inline-block;
 }
@@ -82,7 +82,7 @@
   filter: grayscale(1)!important;
 } */
 
-.fully-centered {
+.centered-v-h {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,7 +298,7 @@
 }
 
 /* ------------------------------- GRID LAYOUT ------------------------------ */
-.grid-background {
+.grid-layout {
   /* border: 1px solid purple; */
   height: 100%;
   width: 97%;
@@ -319,13 +319,13 @@
 }
 
 @media screen and (max-width: 834px) {
-  .grid-background {
+  .grid-layout {
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 25% 25% 25% 25%;
   }
 }
 
-.grid-background>div {
+.grid-layout > div {
   text-align: center;
   margin: 3px;
   font-size: 30px;
