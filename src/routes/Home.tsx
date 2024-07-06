@@ -4,7 +4,7 @@ import Tilt from 'react-parallax-tilt';
 import Title from "../components/Home";
 import img_blocks from "../assets/imgs/blocks.png"
 import img_people from "../assets/imgs/people.png"
-import { PageLoader } from "../components/SharedLayout";
+import { PageLoader } from "../components/ReusableComponents";
 import { useState, useEffect } from 'react';
 
 function Home() {

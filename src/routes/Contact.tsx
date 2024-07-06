@@ -4,7 +4,7 @@ import img_document from "../assets/imgs/document.png"
 import Tilt from 'react-parallax-tilt';
 import { useState, useEffect } from 'react';
 import { POC, POCNoLink } from "../components/Contact";
-import { PageLoader } from "../components/SharedLayout";
+import { PageLoader } from "../components/ReusableComponents";
 
 function Home() {
   const [loading, setLoading] = useState(false);

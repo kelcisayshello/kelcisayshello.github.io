@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Footer, NavigationBar, PageLoader } from '../components/SharedLayout'
+import { Footer, NavigationBar, PageLoader } from '../components/ReusableComponents'
 import Tilt from 'react-parallax-tilt';
 import '../css/w3.css'
 import '../css/pages/studio.css'

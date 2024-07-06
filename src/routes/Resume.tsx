@@ -2,7 +2,7 @@ import img_profile from '../assets/imgs/profile.jpg'
 import { useState, useEffect } from 'react';
 import { Widget, WidgetLinked, InvolvementItem } from '../components/Resume'
 import { GoogleCTR, GoogleInternship, NASAInternship, USArmyInternship, Certification } from '../components/ResumeAssets'
-import { Footer, NavigationBar, PageLoader } from '../components/SharedLayout'
+import { Footer, NavigationBar, PageLoader } from '../components/ReusableComponents'
 import '../css/w3.css'
 import '../css/pages/resume.css'
 

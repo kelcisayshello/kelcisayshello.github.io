@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Footer, NavigationBar, PageLoader } from '../components/SharedLayout'
+import { Footer, NavigationBar, PageLoader } from '../components/ReusableComponents'
 import '../css/w3.css'
 import "../css/pages/projects.css"
 
@@ -24,7 +24,6 @@ function Projects() {
             <div className="route-title-container">
               <h1>Projects.</h1>
             </div>
-
 
             <h2>Demos.</h2>
 
