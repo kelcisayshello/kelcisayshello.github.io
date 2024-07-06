@@ -107,7 +107,7 @@ body {
 .navigation-container {
     font-family: 'Roboto', sans-serif;
     height: min-content;
-    width: 85%;
+    width: 100%!important;
 
     max-width: 1024px;
     /* this is the maximum width that all content on the site will reach */

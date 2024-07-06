@@ -1,8 +1,7 @@
 import img_profile from '../assets/imgs/profile.jpg'
 import { useState, useEffect } from 'react';
-import { Widget, WidgetLinked, InvolvementItem } from '../components/Resume'
-import { GoogleCTR, GoogleInternship, NASAInternship, USArmyInternship, Certification } from '../components/ResumeAssets'
-import { Footer, NavigationBar, PageLoader } from '../components/ReusableComponents'
+import { Footer, NavigationBar, PageLoader, RouteTitle } from '../components/ReusableComponents'
+import { AboutMeLink, Certification, Google, NASA, ExperienceItem, USArmy, AcademicInvolvement } from '../components/ResumeItems';
 import '../css/w3.css'
 import '../css/pages/resume.css'
 
@@ -22,18 +21,17 @@ function Resume() {
         <PageLoader />
       ) : (
         <div className="route-container">
-          <NavigationBar />
           <div className="resume-container w3-content">
+            <NavigationBar />
+
             <div className="w3-row-padding">
 
-              <div className="route-title-container">
-                <h1>Live Resume.</h1>
+              <RouteTitle plain_text="Live Resume.">
                 <div className="btn-download">
                   <a href="https://docs.google.com/document/d/1aRP5LGOwz1ywaAzwiP_AlnI-LAGG3Q0VKHdKFPD7Hfg/edit?usp=sharing"
                     target="_blank">&nbsp;&nbsp;Download</a>
                 </div>
-              </div>
-
+              </RouteTitle>
 
               <div className="w3-third">
                 {/* about me container */}
@@ -51,12 +49,23 @@ function Resume() {
                   <div className="w3-container aboutme-container">
 
                     <div className="aboutme-information">
-                      <Widget icon="fa-regular fa-map" content="Atlanta, GA" />
-                      <WidgetLinked icon="fa-brands fa-github fa-fw" content="@kelcisayshello" link="https://www.github.com/kelcisayshello" />
-                      <WidgetLinked icon="fa-regular fa-paper-plane fa-fw" content="kelcimensah@gmail.com" link="mailto:kelcimensah@gmail.com" />
-                      <WidgetLinked icon="fa-brands fa-linkedin-in fa-fw" content="Kelci Mensah" link="https://www.linkedin.com/in/kelcimensah" />
+                      <AboutMeLink icon="fa-regular fa-map" plain_text='Atlanta, GA' />
+                      <AboutMeLink
+                        icon="fa-brands fa-github fa-fw"
+                        plain_text='@kelcisayshello'
+                        href_link='https://www.github.com/kelcisayshello'
+                      />
+                      <AboutMeLink
+                        icon="fa-regular fa-paper-plane fa-fw"
+                        plain_text='kelcimensah@gmail.com'
+                        href_link='mailto:kelcimensah@gmail.com'
+                      />
+                      <AboutMeLink
+                        icon="fa-brands fa-linkedin-in fa-fw"
+                        plain_text='Kelci Mensah'
+                        href_link='https://www.linkedin.com/in/kelcimensah'
+                      />
                     </div>
-
 
                     <hr />
 
@@ -92,7 +101,6 @@ function Resume() {
                 </div>
               </div>
 
-
               <div className="w3-twothird">
                 {/* work experience container */}
                 <div className="experience-container w3-container w3-card w3-margin-bottom">
@@ -101,23 +109,81 @@ function Resume() {
                     Work Experience.
                   </h2>
 
-                  {/* google ctr full time */}
-                  <GoogleCTR />
+                  <ExperienceItem experience="Cloud Technical Resident, Google Cloud">
+                    <a className="location"><Google />, Atlanta, GA</a>
+                    <p><i className="fa-regular fa-calendar"></i> November 2023 - Present</p>
+                  </ExperienceItem>
 
                   <hr />
 
-                  {/* google internship */}
-                  <GoogleInternship />
+                  <ExperienceItem experience="Cloud Technical Resident, Google Cloud">
+                    <a className="location"><Google />, New York City, NY</a>
+                    <p><i className="fa-regular fa-calendar"></i> May 2022 - August 2022</p>
+                    <ul>
+                      <li>
+                        Developed an <a style={{ color: "#DA4E3F" }} className="hyperlink" href="https://console.cloud.google.com/getting-started?walkthrough_id=functions--first-function-python" target="_blank">interactive Python web-based tutorial</a> to help beginner cloud developers get started writing functions with Google Cloud.
+                      </li>
+                      <li>
+                        Created audio and visual media content to advocate the Google Cloud developer and enterprise partnership.
+                        <ul>
+                          <li>
+                            Contributed to the production life cycle of YouTube content for Google Cloud including contextual research, scripting, and starring in visual media. [<a className="hyperlink" href="#" style={{ color: "#cc0033" }}>view</a>]
+                          </li>
+                          <li>
+                            Supported the production lifecycle of audio content for Google Cloud Platform by starring in podcasts featuring internal and external clients.
+                          </li>
+                          <li>
+                            Published a technical blog piece advocating benefits of student and entry-level developers using Google Cloud Platform’s (GCP) <a style={{ color: "#0057E7" }} href="https://cloud.google.com/bigquery/" className="hyperlink" target="_blank">Big Query</a> solution. [<a className="hyperlink" href="#" style={{ color: "#cc0033" }}>view</a>]
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Contributed to the <a style={{ color: "#3A7359" }} href="https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute" className="hyperlink" target="_blank">Google Computer Science Summer Institute</a> program as a teacher’s assistant (TA) for the computer science principles curriculum.
+                      </li>
+                    </ul>
+                  </ExperienceItem>
 
                   <hr />
 
-                  {/* nasa internship */}
-                  <NASAInternship />
+                  <ExperienceItem experience="Graphics and Visualization Lab Intern">
+                    <a className="location"><NASA />, Cleveland, Ohio</a>
+                    <p><i className="fa-regular fa-calendar"></i> August 2020 - August 2021</p>
+
+                    <ul>
+                      <li>
+                        Integrated Wordpress CMS tools with HTML, CSS, and JavaScript programming to develop and maintain team content on the official website for the NASA Glenn Graphics and Visualization Lab.
+                        <ul>
+                          <li>
+                            Monitored site metrics using web analytics tools to gauge public interest on projects.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Developed K-12 STEM education curriculums for virtual audiences using Python and Java programming languages with a focus on data structure algorithms, web development, and hands-on robotics programming.
+                      </li>
+                      <li>
+                        Created digital iconography for internal tools while practicing government-standard design principles.
+                      </li>
+                    </ul>
+                  </ExperienceItem>
 
                   <hr />
 
-                  {/* apg internship */}
-                  <USArmyInternship />
+                  <ExperienceItem experience='Cyber Security Intern'>
+                    <a className="location"><USArmy /> (Aberdeen Proving Ground), Aberdeen, MD</a>
+                    <p><i className="fa-regular fa-calendar"></i> July 2018</p>
+
+                    <ul>
+                      <li>
+                        Assisted cyber-security specialists within the Department of Defense (D.O.D) in maintaining sensitive digital safety on military-grade operating systems.
+                        <ul>
+                          <li>
+                            Preserved IP address anonymity and practiced invasive malware defense strategies using Linux command line tools.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </ExperienceItem>
 
                   <br />
                 </div>
@@ -126,15 +192,38 @@ function Resume() {
                 <div className="involvement-container w3-container w3-card w3-margin-bottom">
                   <h2 className="subheader" style={{ color: "#f3c572", margin: "2.5rem 0 1rem" }}>Certifications.</h2>
 
-                  <Certification certname="Google Cloud Professional DevOps Engineer" issued="February 2024" credid="94343784" />
+                  <Certification
+                    certificate_name="Google Cloud Certified - Professional Machine Learning Engineer"
+                    date_issued="May 2024"
+                  />
 
                   <hr />
-                  <Certification certname="Google Cloud Professional Cloud Architect" issued="February 2024" credid="96470237" />
+
+                  <Certification
+                    certificate_name="Google Cloud Certified - Professional Cloud DevOps Engineer"
+                    date_issued="February 2024"
+                  />
 
                   <hr />
 
-                  <Certification certname="Google Cloud Associate Cloud Engineer" issued="January 2024" credid="92273471" />
+                  <Certification
+                    certificate_name="Google Cloud Certified - Professional Cloud Architect"
+                    date_issued="February 2024"
+                  />
 
+                  <hr />
+
+                  <Certification
+                    certificate_name="Google Cloud Certified - Cloud Digital Leader"
+                    date_issued="February 2024"
+                  />
+
+                  <hr />
+
+                  <Certification
+                    certificate_name="Google Cloud Certified - Associate Cloud Engineer"
+                    date_issued="January 2024"
+                  />
 
                   <br />
                   <br />
@@ -144,12 +233,21 @@ function Resume() {
                 <div className="involvement-container w3-container w3-card w3-margin-bottom">
                   <h2 className="subheader" style={{ color: "#3A7359", margin: "2.5rem 0 1rem" }}>Academic Involvement.</h2>
 
-                  <InvolvementItem title="Minority Engineering Educational Task (MEET) - Rutgers University NSBE Chapter" date="2019 - 2023" content="Pre-professional student organization for Black, Hispanic, Asian, and other minority-representing student identities within engineering and other technology-based STEM fields." />
+                  <AcademicInvolvement
+                    involvement="Minority Engineering Educational Task (MEET) - Rutgers University NSBE Chapter"
+                    active_dates="2019 - 2023"
+                    description="Pre-professional student organization for Black, Hispanic, Asian, and other minority-representing student identities within engineering and other technology-based STEM fields."
+                  />
 
-                  <InvolvementItem title="Douglass-DIMACS Computer Science Living Learning Community" date="2019 - 2023" content="A curated living-learning center and community for women-representing undergraduate students majoring in computer science." />
+                  <AcademicInvolvement
+                    involvement="Douglass-DIMACS Computer Science Living Learning Community"
+                    active_dates="2019 - 2023"
+                    description="A curated living-learning center and community for women-representing undergraduate students majoring in computer science."
+                  />
 
                   <br />
                   <br />
+
                 </div >
               </div >
             </div >
