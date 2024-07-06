@@ -41,7 +41,7 @@ export function NavigationBar() {
     );
 }
 
-export function RouteTitle({plain_text, children}: {plain_text?: string, children:React.ReactNode}) {
+export function RouteTitle({plain_text, children}: {plain_text?: string, children?:React.ReactNode}) {
     return (
         <div className="route-title-container">
             <h1>{plain_text}</h1>
