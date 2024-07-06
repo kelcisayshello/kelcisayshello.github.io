@@ -69,19 +69,6 @@
   animation-delay: 1.3s;
 }
 
-#box-mwlove {
-  color: #3A7359 !important;
-  background-color: #FBFAF5;
-  border: 3px solid #3A7359;
-  font-size: 1.6rem;
-  text-transform: lowercase;
-}
-
-/* #box-projects {
-  cursor: not-allowed;
-  filter: grayscale(1)!important;
-} */
-
 .centered-v-h {
   display: flex;
   align-items: center;
@@ -202,7 +189,7 @@
   }
 }
 
-/* 834px = iPad Pro 11 (portrait) */
+/* --------------------- 834px = iPad Pro 11 (portrait) --------------------- */
 @media screen and (max-width: 834px) {
   .hello {
     font-size: 5rem;
@@ -318,6 +305,10 @@
   overflow: hidden;
 }
 
+.block-padding {
+  padding: 0.8rem 0.4rem;
+}
+
 @media screen and (max-width: 834px) {
   .grid-layout {
     grid-template-columns: 33.3% 33.3% 33.3%;
@@ -336,7 +327,6 @@
 
 .blue {
   background-color: #345D98;
-  /* box-shadow: 0px 4px 30px 30px rgba(52, 93, 152, 0.15); */
 }
 
 .red {
@@ -345,21 +335,14 @@
 
 .orange {
   background-color: #E07B4A;
-  /* box-shadow: 0px 4px 30px 30px rgba(224, 123, 74, 0.15); */
 }
 
 .yellow {
   background-color: #F3C571;
-  /* box-shadow: 0px 4px 30px 30px rgba(243, 197, 113, 0.20); */
 }
 
 .green {
   background-color: #3A7359;
-  /* box-shadow: 0px 4px 42px 16px rgba(58, 115, 89, 0.20); */
-}
-
-.hidden {
-  opacity: 0;
 }
 
 .flicker {
@@ -423,8 +406,4 @@
   100% {
     opacity: 1;
   }
-}
-
-.gridpadding {
-  padding: 0.8rem 0.4rem;
 }

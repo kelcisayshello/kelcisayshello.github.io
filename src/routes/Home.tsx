@@ -1,11 +1,11 @@
 import 'animate.css';
 import '../css/pages/home.css';
-import Tilt from 'react-parallax-tilt';
 import JumpingName from "../components/JumpingName";
 import img_blocks from "../assets/imgs/blocks.png"
 import img_people from "../assets/imgs/people.png"
 import { PageLoader } from "../components/ReusableComponents";
 import { useState, useEffect } from 'react';
+import { Block, ActionBlock } from "../components/GridBlocks";
 
 export default function Home() {
   const [time, setTime] = useState(new Date());
@@ -31,7 +31,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      { loading ? (
+      {loading ? (
         <PageLoader />
       ) : (
         <div className="route-container home">
@@ -40,47 +40,48 @@ export default function Home() {
               <JumpingName />
             </div>
 
-            <Tilt tiltReverse={true}>
-              <a className="tilt-box" href="/#/projects">
-                <div id="box-projects" className="box-image gridpadding orange tilted-tiles">
-                  <p>Projects</p>
-                  <img className="image-box bks" src={img_blocks} />
-                </div>
-              </a>
-            </Tilt>
+            <ActionBlock
+              href_link='/#/projects'
+              plain_text='Projects'
+              block_id='box-projects'
+              css_class='box-image block-padding orange tilted-tiles'
+              img_css='image-box bks'
+              img_src={img_blocks}
+            />
 
-            <div className="flicker blue"></div>
-            <div id="box-date" className="green fully-centered">
+            <Block css_class="flicker blue" />
+
+            <Block css_class='green centered-v-h' block_id='box-date'>
               <p className="date">{time.toLocaleString('default', { month: 'short' })} {time.getDate()}</p>
               <p className="time">{hours}:{minutes} {ampm.toUpperCase()} <br /> {time.toString().match(/\(([A-Za-z\s].*)\)/)![1]}</p>
-            </div>
+            </Block>
 
-            <div className="red"></div>
-
-            <Tilt tiltReverse={true}>
-              <a className="tilt-box" href="/#/resume">
-                <div id="box-resume" className="centered-v-h tilted-tiles">
-                  <p>Take a look at my resume &nbsp;<i className="fa-solid fa-arrow-right"></i></p>
-                </div>
-              </a>
-            </Tilt>
+            <Block css_class="red" />
 
 
-            <div className="orange "> </div>
+            <ActionBlock
+              href_link='/#/resume'
+              plain_text='Take a look at my resume &nbsp;'
+              block_id='box-resume'
+              css_class='centered-v-h tilted-tiles'
+              icons='fa-solid fa-arrow-right'
+            />
 
-            <Tilt tiltReverse={true}>
-              <a className="tilt-box" href="/#/contact">
-                <div id="box-contactme" className="box-image gridpadding blue tilted-tiles">
-                  <p>Contact me</p>
-                  <img className="image-box ppl" src={img_people} />
-                </div>
-              </a>
-            </Tilt>
+            <Block css_class="orange" />
 
-            <div className="flicker green" style={{ animationDelay: "7s" }}> </div>
-            <div className="blue"> </div>
-            <div className="yellow"> </div>
-            <div className="flicker red " style={{ animationDelay: "4s" }}> </div>
+            <ActionBlock
+              href_link='/#/contact'
+              plain_text='Contact me'
+              block_id='box-contactme'
+              css_class='box-image block-padding blue tilted-tiles'
+              img_css='image-box ppl'
+              img_src={img_people}
+            />
+
+            <Block css_class="flicker green" style={{ animationDelay: "7s" }} />
+            <Block css_class="blue" />
+            <Block css_class="yellow" />
+            <Block css_class="flicker red" style={{ animationDelay: "4s" }} />
           </div>
         </div>
       )}
