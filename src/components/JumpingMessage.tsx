@@ -1,7 +1,7 @@
-export default function JumpingName() {
+export default function JumpingMessage() {
     return (
         <>
-            <h1 className="hello">
+            <h1 className="jumping-message">
                 Hi, I'm<br />
                 <span className="moving k animate__animated animate__bounce">K</span>
                 <span className="moving e animate__animated animate__bounce">e</span>

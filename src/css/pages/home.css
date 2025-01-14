@@ -1,22 +1,9 @@
-#box-title {
-  grid-column-start: span 2;
-  grid-row-start: span 2;
-  min-width: fit;
-  background-color: #1F1F1F;
+:root {
+  --border-radius: 20px;
+  --baby-powder: #FBFAF5;
 }
 
-.hello {
-  text-align: left;
-  vertical-align: center;
-  width: fit-content;
-  user-select: none;
-  font-family: BrightDemo, serif;
-  line-height: 0.8;
-  color: #FBFAF5 !important;
-  height: fit-content;
-}
-
-/* --------------------------- JUMPING NAME TITLE --------------------------- */
+/* ---------------------- Animated "Kelci Mensah" Title --------------------- */
 .moving {
   display: inline-block;
 }
@@ -69,225 +56,11 @@
   animation-delay: 1.3s;
 }
 
-.centered-v-h {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.tilted-tiles {
-  min-height: 100%;
-  max-height: 100%;
-  overflow: hidden;
-}
-
-#box-date {
-  color: #FBFAF5;
-  font-family: "Gabarito", sans-serif;
-  text-transform: uppercase;
-  flex-direction: column;
-}
-
-#box-date .date {
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-}
-
-#box-date .time {
-  font-size: 0.8rem;
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
-  text-transform: capitalize;
-}
-
-#box-resume {
-  background-color: #1F1F1F;
-  color: #FBFAF5;
-  text-align: left;
-  padding: 0 2rem;
-  font-size: 1.3rem;
-}
-
-.box-image {
-  color: #FBFAF5;
-}
-
-.box-image p {
-  text-align: left;
-  padding: 0 0.6rem;
-  font-size: 1.1rem;
-}
-
-.image-box {
-  height: auto;
-}
-
-/* --------------- 1536px = Desktop Computer (landscape only) --------------- */
-@media screen and (max-width: 1536px) {
-  #box-resume p {
-    font-size: 1.45rem;
-    width: 70%;
-  }
-
-  .box-image p {
-    font-size: 1.2rem;
-  }
-
-  .ppl {
-    margin-top: 28px !important;
-    width: 13rem !important;
-  }
-
-  .bks {
-    margin-top: 25px;
-    width: 12rem !important;
-  }
-
-
-  .hello {
-    font-size: 6vw;
-  }
-}
-
-/* ------------------ 1280px = MacBook Pro 13" (landscape) ------------------ */
-@media screen and (max-width: 1280px) {
-  #box-resume p {
-    font-size: 1.1rem;
-    width: 80%;
-  }
-
-  .image-box {
-    margin-top: 35px!important;
-  }
-}
-
-/* -------------------- 1194px = iPad Pro 11 (landscape) -------------------- */
-@media screen and (max-width: 1194px) {
-
-  .box-image p {
-    font-size: 1.1rem;
-  }
-
-  .ppl {
-    margin-top: 25px;
-    width: 13rem !important;
-  }
-
-  .bks {
-    margin-top: 40px !important;
-    width: 25vh !important;
-  }
-
-  #box-date .date {
-    font-size: 3.15rem;
-  }
-
-  #box-date .time {
-    font-size: 0.95rem;
-  }
-}
-
-/* --------------------- 834px = iPad Pro 11 (portrait) --------------------- */
-@media screen and (max-width: 834px) {
-  .hello {
-    font-size: 5rem;
-  }
-
-  #box-mwlove {
-    font-size: 1.8rem;
-  }
-
-  #box-date .date {
-    font-size: 3.2rem;
-  }
-
-  #box-date .time {
-    font-size: 0.95rem;
-  }
-
-  #box-resume,
-  #box-contact {
-    font-size: 1.6rem;
-  }
-
-  .ppl {
-    margin-top: 30px !important;
-    width: 13rem !important;
-  }
-
-  .bks {
-    margin-top: 22px !important;
-    width: 15vh !important;
-  }
-}
-
-/* ------------------------ 428px = iPhone (portrait) ----------------------- */
-@media screen and (max-width: 428px) {
-
-  #box-resume,
-  #box-contact {
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
-
-  #box-resume p {
-    font-size: 1.1rem;
-    width: 100%;
-  }
-
-  #box-title {
-    padding: 1rem;
-  }
-
-  #box-date .date {
-    font-size: 1.7rem;
-  }
-
-  #box-date .time {
-    font-size: 0.7rem;
-  }
-
-  .hello {
-    font-size: 3rem;
-  }
-
-  .ppl {
-    margin-top: 25px !important;
-    width: 8rem !important;
-  }
-
-  .bks {
-    margin-top: 40px !important;
-    width: 7rem !important;
-  }
-
-  .box-image p {
-    text-align: left;
-    padding: 0 0.6rem;
-    font-size: 0.9rem;
-  }
-}
-
-.tilt-box {
-  text-decoration: none;
-}
-
-.ppl {
-  margin-top: 17px;
-  width: 11rem
-}
-
-.bks {
-  margin-top: 35px;
-  width: 10.5rem;
-}
-
-/* ------------------------------- GRID LAYOUT ------------------------------ */
+/* ---------------------------- Grid Block Layout --------------------------- */
 .grid-layout {
   /* border: 1px solid purple; */
-  height: 100%;
+  height: 97%;
   width: 97%;
   max-width: 1536px;
   max-height: 723px;
@@ -305,10 +78,6 @@
   overflow: hidden;
 }
 
-.block-padding {
-  padding: 0.8rem 0.4rem;
-}
-
 @media screen and (max-width: 834px) {
   .grid-layout {
     grid-template-columns: 33.3% 33.3% 33.3%;
@@ -316,13 +85,32 @@
   }
 }
 
-.grid-layout > div {
+.grid-layout>div {
   text-align: center;
   margin: 3px;
   font-size: 30px;
-  border-radius: 0.1rem;
+  border-radius: var(--border-radius);
   font-weight: 800;
   font-family: 'Gabarito', sans-serif;
+}
+
+/* --------------------------- Grid Block Styling --------------------------- */
+#block-kelcimensah {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+  min-width: fit;
+  background-color: #1F1F1F;
+}
+
+.jumping-message {
+  text-align: left;
+  vertical-align: center;
+  width: fit-content;
+  user-select: none;
+  font-family: BrightDemo, serif;
+  line-height: 0.8;
+  color: #FBFAF5 !important;
+  height: fit-content;
 }
 
 .blue {
@@ -350,6 +138,79 @@
   -moz-animation: flickerAnimation 9s infinite;
   -o-animation: flickerAnimation 9s infinite;
   animation: flickerAnimation 9s infinite;
+}
+
+.block-padding {
+  padding: 0.8rem 1rem;
+}
+
+#block-contact-me {
+  border-radius: var(--border-radius);
+}
+
+#block-projects {
+  background-image: url('img/noisegradient01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--border-radius);
+}
+
+/* Date Block */
+#block-date {
+  color: #FBFAF5;
+  font-family: "Gabarito", sans-serif;
+  text-transform: uppercase;
+  flex-direction: column;
+}
+
+#block-date .date {
+  /* border: 1px solid yellow */
+}
+
+#block-date .current-date {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+#block-date .current-time {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  width: 100%;
+  text-transform: capitalize;
+  /* border: 1px solid magenta; */
+
+}
+
+#block-resume {
+  background-color: #1F1F1F;
+  color: #FBFAF5;
+  text-align: left;
+  padding: 0 2rem;
+  font-size: 1.3rem;
+  border-radius: var(--border-radius);
+}
+
+.centered-v-h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-tilt {
+  text-decoration: none;
+  color: var(--baby-powder);
+}
+
+
+.block-tilt .tilt-content-container {
+  min-height: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 @keyframes flickerAnimation {
@@ -405,5 +266,97 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+/* ---------------------- Media Queries & Responsivity ---------------------- */
+/* ----------------------- 1536px = Desktop Computers ----------------------- */
+@media screen and (max-width: 1536px) {
+  #block-resume p {
+    font-size: 1.45rem;
+    width: 70%;
+  }
+
+  .jumping-message {
+    font-size: 5.8vw;
+  }
+}
+
+/* ------------------ 1280px = MacBook Pro 13" (Landscape) ------------------ */
+@media screen and (max-width: 1280px) {
+  #block-resume p {
+    font-size: 1.1rem;
+    width: 80%;
+  }
+}
+
+/* -------------------- 1194px = iPad Pro 11 (Landscape) -------------------- */
+@media screen and (max-width: 1194px) {
+  #block-date .current-date {
+    font-size: 3.15rem;
+  }
+
+  #block-date .current-time {
+    font-size: 0.95rem;
+  }
+}
+
+/* --------------------- 834px = iPad Pro 11 (Portrait) --------------------- */
+@media screen and (max-width: 834px) {
+  .jumping-message {
+    font-size: 5rem;
+  }
+
+  #block-date .current-date {
+    font-size: 3.2rem;
+  }
+
+  #block-date .current-time {
+    font-size: 0.95rem;
+  }
+
+  #block-resume,
+  #block-contact-me {
+    font-size: 1.6rem;
+  }
+}
+
+/* ------------------------ 428px = iPhone (portrait) ----------------------- */
+@media screen and (max-width: 428px) {
+  #block-resume,
+  #block-contact-me {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  #block-resume p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  #block-kelcimensah {
+    padding: 1rem;
+  }
+
+  #block-date .date {
+    font-size: 1.7rem;
+  }
+
+  #block-date .time {
+    font-size: 0.7rem;
+  }
+
+  .jumping-message {
+    font-size: 3rem;
+  }
+
+  .ppl {
+    margin-top: 25px !important;
+    width: 8rem !important;
+  }
+
+  .bks {
+    margin-top: 40px !important;
+    width: 7rem !important;
   }
 }

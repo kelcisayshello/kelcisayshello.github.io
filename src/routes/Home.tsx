@@ -1,8 +1,6 @@
 import 'animate.css';
 import '../css/pages/home.css';
-import JumpingName from "../components/JumpingName";
-import img_blocks from "../assets/imgs/blocks.png"
-import img_people from "../assets/imgs/people.png"
+import JumpingMessage from "../components/JumpingMessage";
 import { PageLoader } from "../components/ReusableComponents";
 import { useState, useEffect } from 'react';
 import { Block, ActionBlock } from "../components/GridBlocks";
@@ -36,24 +34,26 @@ export default function Home() {
       ) : (
         <div className="route-container home">
           <div className="grid-layout">
-            <div id="box-title" className="centered-v-h">
-              <JumpingName />
+
+            <div id="block-kelcimensah" className="centered-v-h">
+              <JumpingMessage />
             </div>
 
             <ActionBlock
               href_link='/#/projects'
-              plain_text='Projects'
-              block_id='box-projects'
-              css_class='box-image block-padding orange tilted-tiles'
-              img_css='image-box bks'
-              img_src={img_blocks}
+              plain_text='Projects.'
+              block_id='block-projects'
+              css_class='block-padding orange tilt-content-container'
             />
 
             <Block css_class="flicker blue" />
 
-            <Block css_class='green centered-v-h' block_id='box-date'>
-              <p className="date">{time.toLocaleString('default', { month: 'short' })} {time.getDate()}</p>
-              <p className="time">{hours}:{minutes} {ampm.toUpperCase()} <br /> {time.toString().match(/\(([A-Za-z\s].*)\)/)![1]}</p>
+            <Block css_class='green centered-v-h' block_id='block-date'>
+              <div className='date'>
+                <p className="current-date">{time.toLocaleString('default', { month: 'short' })} {time.getDate()}</p>
+                <p className="current-time">{hours}:{minutes} {ampm.toUpperCase()} <br /> {time.toString().match(/\(([A-Za-z\s].*)\)/)![1]}</p>
+              </div>
+              
             </Block>
 
             <Block css_class="red" />
@@ -61,8 +61,8 @@ export default function Home() {
             <ActionBlock
               href_link='/#/resume'
               plain_text='Take a look at my resume &nbsp;'
-              block_id='box-resume'
-              css_class='centered-v-h tilted-tiles'
+              block_id='block-resume'
+              css_class='centered-v-h tilt-content-container'
               icons='fa-solid fa-arrow-right'
             />
 
@@ -70,15 +70,12 @@ export default function Home() {
 
             <ActionBlock
               href_link='/#/contact'
-              plain_text='Contact me'
-              block_id='box-contactme'
-              css_class='box-image block-padding blue tilted-tiles'
-              img_css='image-box ppl'
-              img_src={img_people}
+              plain_text='Contact Me.'
+              block_id='block-contact-me'
+              css_class='block-padding blue tilt-content-container'
             />
-
+            
             <Block css_class="flicker green" delay="7s" />
-
             <Block css_class="blue" />
             <Block css_class="yellow" />
             <Block css_class="flicker red" delay="4s" />
