@@ -8,7 +8,7 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "vite build && read -p \"Enter deployment message: \" message && gh-pages -d dist -m \"$message\"",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

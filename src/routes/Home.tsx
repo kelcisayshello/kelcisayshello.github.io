@@ -53,7 +53,6 @@ export default function Home() {
                 <p className="current-date">{time.toLocaleString('default', { month: 'short' })} {time.getDate()}</p>
                 <p className="current-time">{hours}:{minutes} {ampm.toUpperCase()} <br /> {time.toString().match(/\(([A-Za-z\s].*)\)/)![1]}</p>
               </div>
-              
             </Block>
 
             <Block css_class="red" />

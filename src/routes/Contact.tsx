@@ -3,7 +3,7 @@ import img_home from "../assets/imgs/home.png"
 import img_document from "../assets/imgs/document.png"
 import Method from "../components/MethodOfContact";
 import { PageLoader } from "../components/ReusableComponents";
-import { ActionBlock } from "../components/GridBlocks";
+import { Block, ActionBlock } from "../components/GridBlocks";
 import { useState, useEffect } from 'react';
 
 export default function Contact() {
@@ -27,7 +27,7 @@ export default function Contact() {
                         <ActionBlock
                             href_link='/'
                             plain_text='Go home'
-                            block_id='box-home'
+                            block_id='block-home'
                             css_class='padding'
                             img_css='contact-image'
                             img_src={img_home}
@@ -36,21 +36,26 @@ export default function Contact() {
                         <ActionBlock
                             href_link='/#/resume'
                             plain_text='View my resume'
-                            block_id='box-resumebox'
+                            block_id='block-resume'
                             css_class='padding'
                             img_css='contact-image'
                             img_src={img_document}
                         />
 
-                        <div id="box-text" className="padding">
+                        {/* <div id="block-text" className="padding">
                             <p>Let's stay connected! <br /> Send me an email or get in touch on LinkedIn and Twitter :)</p>
-                        </div>
+                        </div> */}
 
-                        <div id="box-email" className="padding">
+                        <Block css_class='centered-v-h' block_id='block-stay-connected'>
+                            <p>Let's stay connected! <br /> Send me an email or get in touch on LinkedIn and Twitter :)</p>
+                        </Block>
+
+
+                        <div id="block-email" className="padding centered-v-h">
                             <Method method="e-mail" plain_text="kelcimensah@gmail.com" />
                         </div>
 
-                        <div className="padding" id="box-social">
+                        <div className="padding" id="block-social">
                             <Method method="Twitter" plain_text="@kelcisayshello" href_link='https://www.twitter.com/kelcisayshello' />
                             <Method method="LinkedIn" plain_text="in/kelcimensah" href_link='https://www.linkedin.com/in/kelcimensah' />
                             <Method method="GitHub" plain_text="@kelcisayshello" href_link='https://www.github.com/kelcisayshello' />
