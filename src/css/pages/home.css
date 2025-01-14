@@ -135,10 +135,6 @@
   animation: flickerAnimation 9s infinite;
 }
 
-.block-padding {
-  padding: 0.8rem 1rem;
-}
-
 #block-contact-me {
   border-radius: var(--border-radius);
 }

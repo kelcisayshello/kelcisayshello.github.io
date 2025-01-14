@@ -18,15 +18,15 @@
 
 .contact-container a {
     text-decoration: none;
+    color: var(--baby-powder)
 }
 
-.contact-container > div {
+.contact-container>div {
     color: #fbfaf5;
     font-family: "Gabarito", sans-serif;
     margin: 3px;
     border-radius: var(--border-radius);
     overflow: hidden;
-    font-weight: 700;
 }
 
 #block-social {
@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 1.6rem;
 }
 
 #block-email {
@@ -43,7 +43,10 @@
     border: 2px solid #E15F40;
     color: #E15F40;
     display: flex;
-    padding-left: 20px;
+}
+
+#block-email p {
+    width: 100%;
 }
 
 .contact-image {
@@ -54,13 +57,28 @@
 #block-home {
     display: flex;
     flex-direction: column;
-    background-color: #345D98;
+    font-size: var(--grid-block-font-size);
+    font-weight: 700;
+    padding: 1.4rem;
+
+    background-image: url('img/noisegradient02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #block-resume {
-    display: flex;
-    flex-direction: column;
-    background-color: #3A7359;
+    padding: 1.4rem;
+}
+
+#block-resume p {
+    width: 100%;
+}
+
+
+#block-resume p {
+    font-size: var(--grid-block-font-size);
+    font-weight: 700;
 }
 
 #block-stay-connected {
@@ -74,7 +92,8 @@
     width: 80%;
 }
 
-.method-of-contact > h3, p {
+.method-of-contact>h3,
+p {
     margin: 0;
     padding: 0;
     /* border: 1px solid magenta; */
@@ -84,8 +103,9 @@
 .method-of-contact a {
     transition: 0.3s ease-in-out;
 }
-.method-of-contact a:hover{
-    color:#1f1f1f;
+
+.method-of-contact a:hover {
+    color: #1f1f1f;
 }
 
 .method-of-contact:not(:last-child) {
@@ -93,17 +113,16 @@
 }
 
 /* ------------------------- 1024px = Desktop Screen ------------------------ */
-
 @media screen and (max-width: 1024px) {
     .contact-container {
-        width: 75vw!important;
+        width: 75vw !important;
     }
 }
 
 /* -------------------- 1194px = iPad Pro 11 (landscape) -------------------- */
-@media screen and (max-width: 1194px){
+@media screen and (max-width: 1194px) {
     .contact-container {
-        width: 75vw!important;
+        width: 75vw !important;
         /* border: 2px solid magenta; */
     }
 }
@@ -115,7 +134,7 @@
     }
 
     #block-social {
-        grid-column-start: span 1!important;
+        grid-column-start: span 1 !important;
     }
 
     .contact-container {
@@ -124,18 +143,14 @@
     }
 
     .contact-image {
-        width: 25vw!important;
-        margin: 4rem auto!important;
-    }
-
-    .padding {
-        padding: 1rem!important;
+        width: 25vw !important;
+        margin: 4rem auto !important;
     }
 }
 
 /* ----------------------------- 428px = iPhone ----------------------------- */
 @media screen and (max-width: 428px) {
     .contact-image {
-        margin: 3rem auto!important;
+        margin: 3rem auto !important;
     }
 }

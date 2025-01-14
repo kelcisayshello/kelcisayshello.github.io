@@ -26,30 +26,22 @@ export default function Contact() {
 
                         <ActionBlock
                             href_link='/'
-                            plain_text='Go home'
+                            plain_text='Go home.'
                             block_id='block-home'
-                            css_class='padding'
-                            img_css='contact-image'
-                            img_src={img_home}
+                            css_class='block-padding blue tilt-content-container'
                         />
 
                         <ActionBlock
                             href_link='/#/resume'
-                            plain_text='View my resume'
+                            plain_text='Take a look at my resume &nbsp;'
                             block_id='block-resume'
-                            css_class='padding'
-                            img_css='contact-image'
-                            img_src={img_document}
+                            css_class='centered-v-h tilt-content-container'
+                            icons='fa-solid fa-arrow-right'
                         />
-
-                        {/* <div id="block-text" className="padding">
-                            <p>Let's stay connected! <br /> Send me an email or get in touch on LinkedIn and Twitter :)</p>
-                        </div> */}
 
                         <Block css_class='centered-v-h' block_id='block-stay-connected'>
                             <p>Let's stay connected! <br /> Send me an email or get in touch on LinkedIn and Twitter :)</p>
                         </Block>
-
 
                         <div id="block-email" className="padding centered-v-h">
                             <Method method="e-mail" plain_text="kelcimensah@gmail.com" />

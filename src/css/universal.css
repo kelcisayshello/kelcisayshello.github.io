@@ -21,6 +21,7 @@
 
     --border-radius: 20px;
     --baby-powder: #FBFAF5;
+    --grid-block-font-size: 26px;
 }
 
 * {
@@ -40,6 +41,16 @@ html {
 
 body {
     background-color: #FBFAF5;
+}
+
+.block-padding {
+    padding: 0.8rem 1rem;
+}
+
+.centered-v-h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* --------------------------------- ROUTES --------------------------------- */
@@ -227,11 +238,4 @@ body {
     50% {
         transform: translateX(40px);
     }
-}
-
-/* ---------------------------- Universal Styling --------------------------- */
-.centered-v-h {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
