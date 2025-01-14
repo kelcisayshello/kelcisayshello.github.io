@@ -1,6 +1,4 @@
 import '../css/pages/contact.css'
-import img_home from "../assets/imgs/home.png"
-import img_document from "../assets/imgs/document.png"
 import Method from "../components/MethodOfContact";
 import { PageLoader } from "../components/ReusableComponents";
 import { Block, ActionBlock } from "../components/GridBlocks";
